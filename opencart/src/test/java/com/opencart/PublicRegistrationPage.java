@@ -8,14 +8,10 @@ import java.util.Arrays;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class PublicRegistrationPage {
-    private WebDriver wd;
-    private WebDriverWait wait;
-
+public class PublicRegistrationPage extends PageBase {
     //Constructor
     public PublicRegistrationPage(WebDriver wd, WebDriverWait wait) {
-        this.wd = wd;
-        this.wait = wait;
+        super(wd, wait);
     }
 
     public String randomEmailGeneration() {
@@ -41,16 +37,6 @@ public class PublicRegistrationPage {
         wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")));
     }
 
-    public void check(By locator) {
-        wd.findElement(locator).click();
-    }
-
-    public void input(By locator, String value) {
-        wd.findElement(locator).click();
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(value);
-    }
-
     public void clickRegister() {
         click(By.xpath("//a[contains(@href, 'register')]"));
         wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//h1[text() = 'Account']")));
@@ -60,7 +46,4 @@ public class PublicRegistrationPage {
         click(By.xpath("//a[@title = 'My Account']"));
     }
 
-    public void click(By locator) {
-        wait.until(elementToBeClickable(locator)).click();
-    }
 }
