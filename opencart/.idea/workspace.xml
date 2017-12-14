@@ -19,36 +19,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicRegistrationTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PublicRegistrationTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="136">
+              <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java">
+      <file leaf-file-name="PublicRegistrationData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#276#277#0" expanded="true" />
-                <element signature="e#302#303#0" expanded="true" />
-                <element signature="e#344#345#0" expanded="true" />
-                <element signature="e#374#375#0" expanded="true" />
+                <element signature="method#setFirstName#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setLastName#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setEmail#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setPhone#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setPassword#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setRePassword#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setSubscribe#0;class#PublicRegistrationData#0" expanded="false" />
+                <element signature="method#setPolicy#0;class#PublicRegistrationData#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -69,11 +63,12 @@
       <file leaf-file-name="PublicRegistrationPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
-                <element signature="e#2207#2208#0" expanded="true" />
-                <element signature="e#2268#2269#0" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1662#1663#0" expanded="true" />
+                <element signature="method#randomEmailGeneration#0;class#PublicRegistrationPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -465,13 +460,14 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="57" />
     <option name="y" value="54" />
     <option name="width" value="1489" />
@@ -533,6 +529,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencart" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
@@ -757,9 +762,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 31m 46s.xml">
-      <configuration name="PublicRegistrationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 33m 01s.xml">
       <configuration name="PublicRegistrationTests" configurationId="TestNG" />
     </history-entry>
@@ -787,9 +789,12 @@
     <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 22h 58m 42s.xml">
       <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 23h 01m 56s.xml">
+      <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -832,35 +837,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="method#tearDown#0;class#Application#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="e#2207#2208#0" expanded="true" />
-            <element signature="e#2268#2269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -875,10 +851,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="method#tearDown#0;class#Application#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="57" lean-forward="false" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -893,6 +879,43 @@
             <element signature="e#344#345#0" expanded="true" />
             <element signature="e#374#375#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="method#setFirstName#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setLastName#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setEmail#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setPhone#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setPassword#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setRePassword#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setSubscribe#0;class#PublicRegistrationData#0" expanded="false" />
+            <element signature="method#setPolicy#0;class#PublicRegistrationData#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="method#randomEmailGeneration#0;class#PublicRegistrationPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

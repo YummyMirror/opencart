@@ -1,6 +1,5 @@
 package com.opencart.pages;
 
-import com.opencart.pages.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,15 +12,6 @@ public class PublicRegistrationPage extends PageBase {
     //Constructor
     public PublicRegistrationPage(WebDriver wd, WebDriverWait wait) {
         super(wd, wait);
-    }
-
-    public String randomEmailGeneration() {
-        List<String> letters = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-                                            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
-        int randomInt = new SecureRandom().nextInt(100);
-        int randomInt2 = new SecureRandom().nextInt(70);
-        int randomLetter = new SecureRandom().nextInt(letters.size() - 1);
-        return letters.get(randomLetter) + randomInt + letters.get(randomLetter) + randomInt2 + "@gmail.com";
     }
 
     public void fillRegistrationForm() {
@@ -45,5 +35,14 @@ public class PublicRegistrationPage extends PageBase {
 
     public void clickMyAccount() {
         click(By.xpath("//a[@title = 'My Account']"));
+    }
+
+    public String randomEmailGeneration() {
+        List<String> letters = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
+                                            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
+        int randomInt = new SecureRandom().nextInt(100);
+        int randomInt2 = new SecureRandom().nextInt(70);
+        int randomLetter = new SecureRandom().nextInt(letters.size() - 1);
+        return letters.get(randomLetter) + randomInt + letters.get(randomLetter) + randomInt2 + "@gmail.com";
     }
 }
