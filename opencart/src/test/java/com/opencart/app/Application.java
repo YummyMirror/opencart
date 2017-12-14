@@ -1,5 +1,6 @@
-package com.opencart;
+package com.opencart.app;
 
+import com.opencart.pages.PublicRegistrationPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

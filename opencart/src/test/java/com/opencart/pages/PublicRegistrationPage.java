@@ -1,5 +1,6 @@
-package com.opencart;
+package com.opencart.pages;
 
+import com.opencart.pages.PageBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
