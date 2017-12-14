@@ -20,9 +20,14 @@ public class PageBase {
     }
 
     public void input(By locator, String value) {
-        wd.findElement(locator).click();
-        wd.findElement(locator).clear();
-        wd.findElement(locator).sendKeys(value);
+        if (value != null) {
+            String currentValue = wd.findElement(locator).getAttribute("value");
+            if (!value.equals(currentValue)) {
+                wd.findElement(locator).click();
+                wd.findElement(locator).clear();
+                wd.findElement(locator).sendKeys(value);
+            }
+        }
     }
 
     public void click(By locator) {

@@ -45,5 +45,4 @@ public class PublicRegistrationPage extends PageBase {
     public void clickMyAccount() {
         click(By.xpath("//a[@title = 'My Account']"));
     }
-
 }

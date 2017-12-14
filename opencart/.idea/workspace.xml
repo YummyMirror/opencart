@@ -57,8 +57,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
               <folding>
                 <element signature="method#tearDown#0;class#Application#0" expanded="false" />
               </folding>
@@ -69,8 +69,8 @@
       <file leaf-file-name="PublicRegistrationPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="646">
+              <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
               <folding>
                 <element signature="e#2165#2166#0" expanded="true" />
                 <element signature="e#2226#2227#0" expanded="true" />
@@ -88,8 +88,8 @@
                 <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
                 <element signature="e#463#464#0" expanded="true" />
                 <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#735#736#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -461,8 +461,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/Application.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/PageBase.java" />
       </list>
     </option>
   </component>
@@ -725,15 +725,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 19m 23s.xml">
-      <configuration name="PublicRegistrationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 20m 31s.xml">
-      <configuration name="PublicRegistrationTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 28m 56s.xml">
-      <configuration name="PublicRegistrationTests" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="PublicRegistrationTests - 2017.12.14 at 22h 30m 03s.xml">
       <configuration name="PublicRegistrationTests" configurationId="TestNG" />
     </history-entry>
@@ -753,6 +744,15 @@
       <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 22h 51m 28s.xml">
+      <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 22h 53m 36s.xml">
+      <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 22h 55m 37s.xml">
+      <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PublicRegistrationTests_registrationTest - 2017.12.14 at 22h 55m 51s.xml">
       <configuration name="PublicRegistrationTests.registrationTest" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -795,7 +795,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -808,21 +808,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2226#2227#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
           <folding>
             <element signature="method#tearDown#0;class#Application#0" expanded="false" />
           </folding>
@@ -842,11 +839,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/PublicRegistrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="646">
+          <caret line="46" column="5" lean-forward="false" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding>
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2226#2227#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -858,8 +858,8 @@
             <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
             <element signature="e#463#464#0" expanded="true" />
             <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
           </folding>
         </state>
       </provider>
