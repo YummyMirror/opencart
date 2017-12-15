@@ -26,24 +26,21 @@ public class PublicRegPage extends PageBase {
         radio(By.xpath("//label[@class = 'radio-inline']/input"), registrationData.getSubscribe());
         check(By.xpath("//input[@name = 'agree']"), registrationData.getPolicy());
         click(By.xpath("//input[@value = 'Continue']"));
-        wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//p[contains(text(), 'account has been successfully created')]")));
-        click(By.xpath("//div[@class = 'pull-right']/a"));
-        wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")));
     }
 
     public void clickRegister() {
         click(By.xpath("//a[contains(@href, 'register')]"));
-        wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//h1[text() = 'Account']")));
+        wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Account']")));
     }
 
     public void clickMyAccount() {
-        WebElement dropDown = wd.findElement(By.xpath("//a[@title = 'My Account']"));
+        WebElement dropDown = wait.until(elementToBeClickable(By.xpath("//a[@title = 'My Account']")));
         if (dropDown.getAttribute("aria-expanded") == null || dropDown.getAttribute("aria-expanded").equals("false"))
             dropDown.click();
     }
 
-    public String getAccountTitle() {
-        return wd.findElement(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")).getText();
+    public String getSuccessLinkTitle() {
+        return wait.until(visibilityOfElementLocated(By.xpath("//a[contains(@href, 'route=account/success')]"))).getText();
     }
 
     public List<WebElement> getMenuItems() {

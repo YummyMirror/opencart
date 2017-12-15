@@ -1,0 +1,192 @@
+[
+  {
+    "firstName": "",
+    "lastName": "Jordan",
+    "email": "michael.jordan1@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michaeeeeeeeeeeeeeeeeeeeeeeeeeeel",
+    "lastName": "Jordan",
+    "email": "michael.jordan2@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "",
+    "email": "michael.jordan3@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordaaaaaaaaaaaaaaaaaaaaaaaaaaaan",
+    "email": "michael.jordan4@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael_jordan18@gmail",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael_jordan18@gmail.com.ru",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael_jordan18gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael_jorda.n18@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael jordan18@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "mich@ael_jordan18@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "mich#ael_jordan18@gmail.com",
+    "phone": "12345",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan5@gmail.com",
+    "phone": "",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan6@gmail.com",
+    "phone": "12",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan7@gmail.com",
+    "phone": "123451234512345123451234512345123",
+    "password": "11111",
+    "rePassword": "11111",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan8@gmail.com",
+    "phone": "12345",
+    "password": "123",
+    "rePassword": "123",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan9@gmail.com",
+    "phone": "12345",
+    "password": "123451234512345123451",
+    "rePassword": "123451234512345123451",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan10@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12346",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan11@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": false,
+    "policy": true
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Jordan",
+    "email": "michael.jordan12@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": false
+  }
+]

@@ -58,6 +58,25 @@ public class PublicRegTests extends TestBase {
         return list.stream().map(r -> new Object[] {r}).iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]> invalidRegDataJson() throws IOException {
+        File file = new File("src/test/resources/dataProviders/invalidRegData.json");
+        FileReader reader = new FileReader(file);
+        BufferedReader buffReader = new BufferedReader(reader);
+        String line = buffReader.readLine();
+        String json = "";
+        while (line != null) {
+            json += line;
+            line = buffReader.readLine();
+        }
+        Gson gson = new Gson();
+        Type collectionType = new TypeToken<List<PublicRegData>>(){}.getType();
+        List<PublicRegData> list = gson.fromJson(json, collectionType);
+        reader.close();
+        buffReader.close();
+        return list.stream().map(r -> new Object[] {r}).iterator();
+    }
+
     @BeforeMethod
     public void precondition() {
         app.getPublicRegPage().clickMyAccount();
@@ -72,6 +91,13 @@ public class PublicRegTests extends TestBase {
         app.getPublicRegPage().clickRegister();
         app.getPublicRegPage().fillRegistrationForm(regData);
 
-        assertEquals(app.getPublicRegPage().getAccountTitle(), "My Account");
+        assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success");
+    }
+
+    @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2)
+    public void invalidRegistrationTest() {
+        app.getPublicRegPage().clickMyAccount();
+        app.getPublicRegPage().clickRegister();
+
     }
 }
