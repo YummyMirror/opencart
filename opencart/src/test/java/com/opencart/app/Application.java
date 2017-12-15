@@ -1,6 +1,6 @@
 package com.opencart.app;
 
-import com.opencart.pages.PublicRegistrationPage;
+import com.opencart.pages.PublicRegPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,7 +11,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 public class Application {
     private WebDriver wd;
     private WebDriverWait wait;
-    private PublicRegistrationPage publicRegistrationPage;
+    private PublicRegPage publicRegPage;
 
     public void init() {
         wd = new ChromeDriver();
@@ -21,7 +21,7 @@ public class Application {
         wd.navigate().to("http://localhost/opencart/");
         wait.until(visibilityOfElementLocated(By.xpath("//a[text() = 'Your Store']")));
         //Delegates
-        publicRegistrationPage = new PublicRegistrationPage(wd, wait);
+        publicRegPage = new PublicRegPage(wd, wait);
     }
 
     public void tearDown() {
@@ -31,7 +31,7 @@ public class Application {
     }
 
     //Getters of delegates
-    public PublicRegistrationPage getPublicRegistrationPage() {
-        return publicRegistrationPage;
+    public PublicRegPage getPublicRegPage() {
+        return publicRegPage;
     }
 }

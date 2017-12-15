@@ -1,6 +1,6 @@
 package com.opencart.models;
 
-public class PublicRegistrationData {
+public class PublicRegData {
     private String firstName;
     private String lastName;
     private String email;
@@ -44,42 +44,42 @@ public class PublicRegistrationData {
     }
 
     //Setters
-    public PublicRegistrationData setFirstName(String firstName) {
+    public PublicRegData setFirstName(String firstName) {
         this.firstName = firstName;
         return this;
     }
 
-    public PublicRegistrationData setLastName(String lastName) {
+    public PublicRegData setLastName(String lastName) {
         this.lastName = lastName;
         return this;
     }
 
-    public PublicRegistrationData setEmail(String email) {
+    public PublicRegData setEmail(String email) {
         this.email = email;
         return this;
     }
 
-    public PublicRegistrationData setPhone(String phone) {
+    public PublicRegData setPhone(String phone) {
         this.phone = phone;
         return this;
     }
 
-    public PublicRegistrationData setPassword(String password) {
+    public PublicRegData setPassword(String password) {
         this.password = password;
         return this;
     }
 
-    public PublicRegistrationData setRePassword(String rePassword) {
+    public PublicRegData setRePassword(String rePassword) {
         this.rePassword = rePassword;
         return this;
     }
 
-    public PublicRegistrationData setSubscribe(Boolean subscribe) {
+    public PublicRegData setSubscribe(Boolean subscribe) {
         this.subscribe = subscribe;
         return this;
     }
 
-    public PublicRegistrationData setPolicy(Boolean policy) {
+    public PublicRegData setPolicy(Boolean policy) {
         this.policy = policy;
         return this;
     }

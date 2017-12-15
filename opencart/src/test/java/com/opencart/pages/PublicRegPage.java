@@ -1,5 +1,6 @@
 package com.opencart.pages;
 
+import com.opencart.models.PublicRegData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,20 +9,21 @@ import java.util.Arrays;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
-public class PublicRegistrationPage extends PageBase {
+public class PublicRegPage extends PageBase {
     //Constructor
-    public PublicRegistrationPage(WebDriver wd, WebDriverWait wait) {
+    public PublicRegPage(WebDriver wd, WebDriverWait wait) {
         super(wd, wait);
     }
 
-    public void fillRegistrationForm() {
-        input(By.xpath("//input[@id = 'input-firstname']"), "Kobe");
-        input(By.xpath("//input[@id = 'input-lastname']"), "Bryant");
-        input(By.xpath("//input[@id = 'input-email']"), randomEmailGeneration());
-        input(By.xpath("//input[@id = 'input-telephone']"), "12345");
-        input(By.xpath("//input[@id = 'input-password']"), "password");
-        input(By.xpath("//input[@id = 'input-confirm']"), "password");
-        check(By.xpath("//input[@name = 'agree']"));
+    public void fillRegistrationForm(PublicRegData registrationData) {
+        input(By.xpath("//input[@id = 'input-firstname']"), registrationData.getFirstName());
+        input(By.xpath("//input[@id = 'input-lastname']"), registrationData.getLastName());
+        input(By.xpath("//input[@id = 'input-email']"), registrationData.getEmail());
+        input(By.xpath("//input[@id = 'input-telephone']"), registrationData.getPhone());
+        input(By.xpath("//input[@id = 'input-password']"), registrationData.getPassword());
+        input(By.xpath("//input[@id = 'input-confirm']"), registrationData.getRePassword());
+        radio(By.xpath("//label[@class = 'radio-inline']/input"), registrationData.getSubscribe());
+        check(By.xpath("//input[@name = 'agree']"), registrationData.getPolicy());
         click(By.xpath("//input[@value = 'Continue']"));
         wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//p[contains(text(), 'account has been successfully created')]")));
         click(By.xpath("//div[@class = 'pull-right']/a"));
@@ -35,6 +37,10 @@ public class PublicRegistrationPage extends PageBase {
 
     public void clickMyAccount() {
         click(By.xpath("//a[@title = 'My Account']"));
+    }
+
+    public String getAccountTitle() {
+        return wd.findElement(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")).getText();
     }
 
     public String randomEmailGeneration() {
