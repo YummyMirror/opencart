@@ -1,13 +1,23 @@
 package com.opencart.models;
 
+import com.google.gson.annotations.Expose;
+
 public class PublicRegData {
+    @Expose
     private String firstName;
+    @Expose
     private String lastName;
+    @Expose
     private String email;
+    @Expose
     private String phone;
+    @Expose
     private String password;
+    @Expose
     private String rePassword;
+    @Expose
     private Boolean subscribe;
+    @Expose
     private Boolean policy;
 
     //Getters

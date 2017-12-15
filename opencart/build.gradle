@@ -14,6 +14,12 @@ dependencies {
 
     //Including WebDriver 3+ version
     compile 'org.seleniumhq.selenium:selenium-java:3.7.1'
+
+    //Including Log4j
+    compile 'org.apache.logging.log4j:log4j:2.10.0'
+
+    //Including Gson library
+    compile 'com.google.code.gson:gson:2.8.2'
 }
 
 test {

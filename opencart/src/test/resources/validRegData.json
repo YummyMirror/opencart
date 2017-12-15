@@ -1,0 +1,52 @@
+[
+  {
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "email": "kobe.bryant@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "email": "kobe.bryant@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "email": "kobe.bryant@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "email": "kobe.bryant@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": true
+  },
+  {
+    "firstName": "Kobe",
+    "lastName": "Bryant",
+    "email": "kobe.bryant@gmail.com",
+    "phone": "12345",
+    "password": "12345",
+    "rePassword": "12345",
+    "subscribe": true,
+    "policy": true
+  }
+]
