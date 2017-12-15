@@ -36,14 +36,14 @@ public class registration {
         FileWriter writer = new FileWriter(file);
         publicRegDataList.forEach(el -> {
             try {
-                writer.write(String.format("%s;%s;%s;%s;%s;%s;%b;%b;", el.getFirstName(),
-                                                                       el.getLastName(),
-                                                                       el.getEmail(),
-                                                                       el.getPhone(),
-                                                                       el.getPassword(),
-                                                                       el.getRePassword(),
-                                                                       el.getSubscribe(),
-                                                                       el.getPolicy()));
+                writer.write(String.format("%s;%s;%s;%s;%s;%s;%b;%b\n", el.getFirstName(),
+                                                                        el.getLastName(),
+                                                                        el.getEmail(),
+                                                                        el.getPhone(),
+                                                                        el.getPassword(),
+                                                                        el.getRePassword(),
+                                                                        el.getSubscribe(),
+                                                                        el.getPolicy()));
             } catch (IOException e) {
                 e.printStackTrace();
             }

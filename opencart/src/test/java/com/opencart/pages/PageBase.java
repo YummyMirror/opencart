@@ -56,4 +56,8 @@ public class PageBase {
     public void click(By locator) {
         wait.until(elementToBeClickable(locator)).click();
     }
+
+    public Boolean areElementsPresent(By locator) {
+        return wd.findElements(locator).size() > 0;
+    }
 }

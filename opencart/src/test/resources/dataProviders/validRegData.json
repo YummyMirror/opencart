@@ -6,7 +6,8 @@
     "phone": "12345",
     "password": "12345",
     "rePassword": "12345",
-    "subscribe": true
+    "subscribe": true,
+    "policy": true
   },
   {
     "firstName": "Kobe",
@@ -15,7 +16,8 @@
     "phone": "12345",
     "password": "12345",
     "rePassword": "12345",
-    "subscribe": true
+    "subscribe": true,
+    "policy": true
   },
   {
     "firstName": "Kobe",
@@ -24,7 +26,8 @@
     "phone": "12345",
     "password": "12345",
     "rePassword": "12345",
-    "subscribe": true
+    "subscribe": true,
+    "policy": true
   },
   {
     "firstName": "Kobe",
@@ -33,7 +36,8 @@
     "phone": "12345",
     "password": "12345",
     "rePassword": "12345",
-    "subscribe": true
+    "subscribe": true,
+    "policy": true
   },
   {
     "firstName": "Kobe",
@@ -42,6 +46,7 @@
     "phone": "12345",
     "password": "12345",
     "rePassword": "12345",
-    "subscribe": true
+    "subscribe": true,
+    "policy": true
   }
 ]

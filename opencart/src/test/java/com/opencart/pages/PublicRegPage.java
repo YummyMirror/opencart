@@ -3,6 +3,7 @@ package com.opencart.pages;
 import com.opencart.models.PublicRegData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -36,11 +37,17 @@ public class PublicRegPage extends PageBase {
     }
 
     public void clickMyAccount() {
-        click(By.xpath("//a[@title = 'My Account']"));
+        WebElement dropDown = wd.findElement(By.xpath("//a[@title = 'My Account']"));
+        if (dropDown.getAttribute("aria-expanded") == null || dropDown.getAttribute("aria-expanded").equals("false"))
+            dropDown.click();
     }
 
     public String getAccountTitle() {
         return wd.findElement(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")).getText();
+    }
+
+    public List<WebElement> getMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
     }
 
     public String randomEmailGeneration() {
@@ -50,5 +57,9 @@ public class PublicRegPage extends PageBase {
         int randomInt2 = new SecureRandom().nextInt(70);
         int randomLetter = new SecureRandom().nextInt(letters.size() - 1);
         return letters.get(randomLetter) + randomInt + letters.get(randomLetter) + randomInt2 + "@gmail.com";
+    }
+
+    public void clickLogout() {
+        click(By.xpath("//a[contains(@href, 'logout')]"));
     }
 }
