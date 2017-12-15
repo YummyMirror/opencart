@@ -43,6 +43,10 @@ public class PublicRegPage extends PageBase {
         return wait.until(visibilityOfElementLocated(By.xpath("//a[contains(@href, 'route=account/success')]"))).getText();
     }
 
+    public String getRegisterLinkTitle() {
+        return wait.until(visibilityOfElementLocated(By.xpath("//ul[@class = 'breadcrumb']//a[contains(@href, 'route=account/register')]"))).getText();
+    }
+
     public List<WebElement> getMenuItems() {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
     }

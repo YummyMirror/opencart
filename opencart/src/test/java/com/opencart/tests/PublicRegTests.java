@@ -7,7 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -95,9 +98,11 @@ public class PublicRegTests extends TestBase {
     }
 
     @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2)
-    public void invalidRegistrationTest() {
+    public void invalidRegistrationTest(PublicRegData regData) {
         app.getPublicRegPage().clickMyAccount();
         app.getPublicRegPage().clickRegister();
+        app.getPublicRegPage().fillRegistrationForm(regData);
 
+        assertEquals(app.getPublicRegPage().getRegisterLinkTitle(), "Register");
     }
 }
