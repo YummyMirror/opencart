@@ -1,5 +1,6 @@
 package com.opencart.app;
 
+import com.opencart.pages.PublicNaviPage;
 import com.opencart.pages.PublicRegPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.HasCapabilities;
@@ -17,8 +18,9 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 public class Application {
     private WebDriver wd;
     private WebDriverWait wait;
-    private PublicRegPage publicRegPage;
     private String browser;
+    private PublicRegPage publicRegPage;
+    private PublicNaviPage publicNaviPage;
     //Constructor
     public Application(String browser) {
         this.browser = browser;
@@ -33,6 +35,7 @@ public class Application {
         wait.until(visibilityOfElementLocated(By.xpath("//a[text() = 'Your Store']")));
         //Delegates
         publicRegPage = new PublicRegPage(wd, wait);
+        publicNaviPage = new PublicNaviPage(wd, wait);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }
@@ -46,6 +49,10 @@ public class Application {
     //Getters of delegates
     public PublicRegPage getPublicRegPage() {
         return publicRegPage;
+    }
+
+    public PublicNaviPage getPublicNaviPage() {
+        return publicNaviPage;
     }
 
     public WebDriver getWebDriver(String browser) {

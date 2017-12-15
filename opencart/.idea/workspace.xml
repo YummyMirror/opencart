@@ -39,24 +39,37 @@
       <file leaf-file-name="PageBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+            <state relative-caret-position="833">
+              <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
               <folding>
                 <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+                <element signature="e#1949#1950#0" expanded="true" />
+                <element signature="e#2007#2008#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicRegPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PublicRegPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="68">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="26" />
               <folding>
                 <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-                <element signature="e#3044#3045#0" expanded="true" />
-                <element signature="e#3109#3110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicNaviPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
+              <folding>
+                <element signature="e#1134#1135#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +78,8 @@
       <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="510">
+              <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
               <folding>
                 <element signature="method#tearDown#0;class#Application#0" expanded="false" />
                 <element signature="method#getWebDriver#0;class#Application#0" expanded="false" />
@@ -78,46 +91,15 @@
       <file leaf-file-name="PublicRegTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="100" column="39" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
               <folding>
                 <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="e#734#744#0" expanded="true" />
                 <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-                <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicRegData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
-              <folding>
-                <element signature="method#setFirstName#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setLastName#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setEmail#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setPhone#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setPassword#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setRePassword#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setSubscribe#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#setPolicy#0;class#PublicRegData#0" expanded="false" />
-                <element signature="method#toString#0;class#PublicRegData#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="invalidRegData.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -492,21 +474,25 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegistrationTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/registration.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.csv" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PubLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -570,24 +556,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="generators" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
@@ -894,8 +862,8 @@
     <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 38m 41s.xml">
       <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 23h 08m 23s.xml">
-      <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 59m 05s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 23h 09m 11s.xml">
       <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
@@ -905,7 +873,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -943,14 +911,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
@@ -962,6 +922,8 @@
           <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2007#2008#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -972,8 +934,6 @@
           <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
             <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1007,7 +967,6 @@
             <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1018,6 +977,8 @@
           <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2007#2008#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1036,8 +997,6 @@
           <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
             <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1063,7 +1022,6 @@
             <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1074,6 +1032,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2007#2008#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1092,8 +1052,6 @@
           <caret line="42" column="102" lean-forward="false" selection-start-line="42" selection-start-column="102" selection-end-line="42" selection-end-column="102" />
           <folding>
             <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1119,7 +1077,6 @@
             <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1176,27 +1133,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="34" column="46" lean-forward="false" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="method#tearDown#0;class#Application#0" expanded="false" />
-            <element signature="method#getWebDriver#0;class#Application#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -1205,38 +1141,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-            <element signature="e#3044#3045#0" expanded="true" />
-            <element signature="e#3109#3110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="100" column="39" lean-forward="false" selection-start-line="100" selection-start-column="16" selection-end-line="100" selection-end-column="39" />
-          <folding>
-            <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="e#734#744#0" expanded="true" />
-            <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1254,6 +1163,80 @@
             <element signature="method#setSubscribe#0;class#PublicRegData#0" expanded="false" />
             <element signature="method#setPolicy#0;class#PublicRegData#0" expanded="false" />
             <element signature="method#toString#0;class#PublicRegData#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+          <folding>
+            <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+            <element signature="e#1949#1950#0" expanded="true" />
+            <element signature="e#2007#2008#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="49" column="25" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+          <folding>
+            <element signature="method#tearDown#0;class#Application#0" expanded="false" />
+            <element signature="method#getWebDriver#0;class#Application#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="83" column="31" lean-forward="false" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+          <folding>
+            <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="e#734#744#0" expanded="true" />
+            <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
           </folding>
         </state>
       </provider>

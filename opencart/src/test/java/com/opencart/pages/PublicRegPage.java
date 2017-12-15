@@ -3,7 +3,6 @@ package com.opencart.pages;
 import com.opencart.models.PublicRegData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -28,27 +27,12 @@ public class PublicRegPage extends PageBase {
         click(By.xpath("//input[@value = 'Continue']"));
     }
 
-    public void clickRegister() {
-        click(By.xpath("//a[contains(@href, 'register')]"));
-        wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Account']")));
-    }
-
-    public void clickMyAccount() {
-        WebElement dropDown = wait.until(elementToBeClickable(By.xpath("//a[@title = 'My Account']")));
-        if (dropDown.getAttribute("aria-expanded") == null || dropDown.getAttribute("aria-expanded").equals("false"))
-            dropDown.click();
-    }
-
     public String getSuccessLinkTitle() {
         return wait.until(visibilityOfElementLocated(By.xpath("//a[contains(@href, 'route=account/success')]"))).getText();
     }
 
     public String getRegisterLinkTitle() {
         return wait.until(visibilityOfElementLocated(By.xpath("//ul[@class = 'breadcrumb']//a[contains(@href, 'route=account/register')]"))).getText();
-    }
-
-    public List<WebElement> getMenuItems() {
-        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
     }
 
     public String randomEmailGeneration() {
@@ -58,9 +42,5 @@ public class PublicRegPage extends PageBase {
         int randomInt2 = new SecureRandom().nextInt(70);
         int randomLetter = new SecureRandom().nextInt(letters.size() - 1);
         return letters.get(randomLetter) + randomInt + letters.get(randomLetter) + randomInt2 + "@gmail.com";
-    }
-
-    public void clickLogout() {
-        click(By.xpath("//a[contains(@href, 'logout')]"));
     }
 }

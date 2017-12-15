@@ -82,16 +82,16 @@ public class PublicRegTests extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        app.getPublicRegPage().clickMyAccount();
-        List<WebElement> menuItems = app.getPublicRegPage().getMenuItems();
+        app.getPublicNaviPage().clickMyAccount();
+        List<WebElement> menuItems = app.getPublicNaviPage().getMenuItems();
         if (menuItems.size() > 2)
-            app.getPublicRegPage().clickLogout();
+            app.getPublicNaviPage().clickLogout();
     }
 
     @Test(enabled = true, dataProvider = "validRegDataJson", priority = 1)
     public void registrationTest(PublicRegData regData) {
-        app.getPublicRegPage().clickMyAccount();
-        app.getPublicRegPage().clickRegister();
+        app.getPublicNaviPage().clickMyAccount();
+        app.getPublicNaviPage().clickRegister();
         app.getPublicRegPage().fillRegistrationForm(regData);
 
         assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success");
@@ -99,8 +99,8 @@ public class PublicRegTests extends TestBase {
 
     @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2)
     public void invalidRegistrationTest(PublicRegData regData) {
-        app.getPublicRegPage().clickMyAccount();
-        app.getPublicRegPage().clickRegister();
+        app.getPublicNaviPage().clickMyAccount();
+        app.getPublicNaviPage().clickRegister();
         app.getPublicRegPage().fillRegistrationForm(regData);
 
         assertEquals(app.getPublicRegPage().getRegisterLinkTitle(), "Register");

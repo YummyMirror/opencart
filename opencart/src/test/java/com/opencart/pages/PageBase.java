@@ -11,7 +11,6 @@ public class PageBase {
     protected WebDriver wd;
     protected WebDriverWait wait;
 
-
     //Constructor
     public PageBase(WebDriver wd, WebDriverWait wait) {
         this.wd = wd;
