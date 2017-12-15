@@ -93,4 +93,12 @@ public class PublicRegData {
         this.policy = policy;
         return this;
     }
+
+    @Override
+    public String toString() {
+        return "PublicRegData{" +
+                "firstName='" + firstName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
 }

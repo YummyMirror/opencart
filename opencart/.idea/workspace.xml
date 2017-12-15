@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicRegTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PublicRegTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -87,6 +87,26 @@
                 <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicRegData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <element signature="method#setFirstName#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setLastName#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setEmail#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setPhone#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setPassword#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setRePassword#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setSubscribe#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#setPolicy#0;class#PublicRegData#0" expanded="false" />
+                <element signature="method#toString#0;class#PublicRegData#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -474,7 +494,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.csv" />
@@ -483,10 +502,11 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -865,14 +885,14 @@
     <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 31m 51s.xml">
       <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 22h 37m 38s.xml">
-      <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 35m 57s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 22h 38m 21s.xml">
-      <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 37m 17s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 22h 55m 00s.xml">
-      <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 38m 41s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PublicRegTests_registrationTest - 2017.12.15 at 23h 08m 23s.xml">
       <configuration name="PublicRegTests.registrationTest" configurationId="TestNG" />
@@ -885,7 +905,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1136,23 +1156,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="method#setFirstName#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setLastName#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setEmail#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setPhone#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setPassword#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setRePassword#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setSubscribe#0;class#PublicRegData#0" expanded="false" />
-            <element signature="method#setPolicy#0;class#PublicRegData#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/generators/registration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1233,6 +1236,24 @@
             <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#registrationTest#0;class#PublicRegTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="method#setFirstName#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setLastName#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setEmail#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setPhone#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setPassword#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setRePassword#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setSubscribe#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#setPolicy#0;class#PublicRegData#0" expanded="false" />
+            <element signature="method#toString#0;class#PublicRegData#0" expanded="false" />
           </folding>
         </state>
       </provider>
