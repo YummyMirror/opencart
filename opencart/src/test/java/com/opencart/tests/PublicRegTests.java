@@ -1,14 +1,14 @@
 package com.opencart.tests;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.opencart.models.PublicRegData;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -39,6 +39,25 @@ public class PublicRegTests extends TestBase {
         return list.iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]> validRegDataJson() throws IOException {
+        File file = new File("src/test/resources/dataProviders/validRegData.json");
+        FileReader reader = new FileReader(file);
+        BufferedReader buffReader = new BufferedReader(reader);
+        String line = buffReader.readLine();
+        String json = "";
+        while (line != null) {
+            json += line;
+            line = buffReader.readLine();
+        }
+        Gson gson = new Gson();
+        Type collectionType = new TypeToken<List<PublicRegData>>(){}.getType();
+        List<PublicRegData> list = gson.fromJson(json, collectionType);
+        reader.close();
+        buffReader.close();
+        return list.stream().map(r -> new Object[] {r}).iterator();
+    }
+
     @BeforeMethod
     public void precondition() {
         app.getPublicRegPage().clickMyAccount();
@@ -47,7 +66,7 @@ public class PublicRegTests extends TestBase {
             app.getPublicRegPage().clickLogout();
     }
 
-    @Test(enabled = true, dataProvider = "validRegDataCsv", priority = 1)
+    @Test(enabled = true, dataProvider = "validRegDataJson", priority = 1)
     public void registrationTest(PublicRegData regData) {
         app.getPublicRegPage().clickMyAccount();
         app.getPublicRegPage().clickRegister();
