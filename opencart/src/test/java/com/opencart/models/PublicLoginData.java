@@ -1,7 +1,11 @@
 package com.opencart.models;
 
+import com.google.gson.annotations.Expose;
+
 public class PublicLoginData {
+    @Expose
     private String email;
+    @Expose
     private String password;
 
     //Getters

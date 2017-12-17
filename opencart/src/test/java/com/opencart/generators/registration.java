@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class registration {
+public class Registration {
     public static void main(String[] args) throws IOException {
         int number = Integer.parseInt(args[0]);
         String filePath = args[1];
