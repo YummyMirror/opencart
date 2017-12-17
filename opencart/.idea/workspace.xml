@@ -99,7 +99,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicLoginTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PublicLoginTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -107,6 +107,20 @@
               <folding>
                 <element signature="method#validLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
                 <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicLoginData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="28" />
+              <folding>
+                <element signature="method#setEmail#0;class#PublicLoginData#0" expanded="false" />
+                <element signature="method#setPassword#0;class#PublicLoginData#0" expanded="false" />
+                <element signature="method#toString#0;class#PublicLoginData#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -496,9 +510,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java" />
       </list>
     </option>
   </component>
@@ -559,6 +573,15 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="opencart" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
@@ -887,6 +910,9 @@
     <history-entry file="PublicLoginTests - 2017.12.17 at 20h 29m 19s.xml">
       <configuration name="PublicLoginTests" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="PublicLoginTests - 2017.12.17 at 20h 30m 56s.xml">
+      <configuration name="PublicLoginTests" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="PublicLoginTests_loginTest - 2017.12.17 at 19h 35m 19s.xml">
       <configuration name="PublicLoginTests.loginTest" configurationId="TestNG" />
     </history-entry>
@@ -898,9 +924,6 @@
     </history-entry>
     <history-entry file="PublicLoginTests_loginTest - 2017.12.17 at 19h 38m 47s.xml">
       <configuration name="PublicLoginTests.loginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 31m 51s.xml">
-      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.15 at 23h 35m 57s.xml">
       <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
@@ -1386,17 +1409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="method#setEmail#0;class#PublicLoginData#0" expanded="false" />
-            <element signature="method#setPassword#0;class#PublicLoginData#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validLoginData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1426,7 +1438,7 @@
             <element signature="method#saveCsv#0;class#Registration#0" expanded="false" />
             <element signature="method#saveJson#0;class#Registration#0" expanded="false" />
             <element signature="method#createRegData#0;class#Registration#0" expanded="false" />
-            <element signature="e#2676#2691#0" expanded="true" />
+            <element signature="e#2676#2691#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1450,6 +1462,18 @@
           <folding>
             <element signature="method#validLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
             <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="method#setEmail#0;class#PublicLoginData#0" expanded="false" />
+            <element signature="method#setPassword#0;class#PublicLoginData#0" expanded="false" />
+            <element signature="method#toString#0;class#PublicLoginData#0" expanded="false" />
           </folding>
         </state>
       </provider>
