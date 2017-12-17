@@ -14,6 +14,6 @@ public class PublicLoginTests extends TestBase {
                                                          .setPassword("");
         app.getPublicLoginPage().fillLoginForm(loginData);
 
-        assertEquals(app.getPublicLoginPage().getMyAccountTitle(), "My Account");
+        assertEquals(app.getPublicLoginPage().getMyAccountTitle(), "My Account", "User isn't logged in!");
     }
 }

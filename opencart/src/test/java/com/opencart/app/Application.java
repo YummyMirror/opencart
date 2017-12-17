@@ -1,5 +1,7 @@
 package com.opencart.app;
 
+import com.opencart.models.PublicLoginData;
+import com.opencart.pages.PublicLoginPage;
 import com.opencart.pages.PublicNaviPage;
 import com.opencart.pages.PublicRegPage;
 import org.openqa.selenium.By;
@@ -21,6 +23,7 @@ public class Application {
     private String browser;
     private PublicRegPage publicRegPage;
     private PublicNaviPage publicNaviPage;
+    private PublicLoginPage publicLoginPage;
     //Constructor
     public Application(String browser) {
         this.browser = browser;
@@ -36,6 +39,7 @@ public class Application {
         //Delegates
         publicRegPage = new PublicRegPage(wd, wait);
         publicNaviPage = new PublicNaviPage(wd, wait);
+        publicLoginPage = new PublicLoginPage(wd, wait);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }
@@ -53,6 +57,10 @@ public class Application {
 
     public PublicNaviPage getPublicNaviPage() {
         return publicNaviPage;
+    }
+
+    public PublicLoginPage getPublicLoginPage() {
+        return publicLoginPage;
     }
 
     public WebDriver getWebDriver(String browser) {

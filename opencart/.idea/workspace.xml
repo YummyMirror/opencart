@@ -88,8 +88,8 @@
       <file leaf-file-name="PublicRegTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="92" column="49" lean-forward="true" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+            <state relative-caret-position="544">
+              <caret line="105" column="100" lean-forward="false" selection-start-line="105" selection-start-column="100" selection-end-line="105" selection-end-column="100" />
               <folding>
                 <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
                 <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
@@ -103,8 +103,8 @@
       <file leaf-file-name="PublicLoginTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="16" column="92" lean-forward="false" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -490,16 +490,16 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PubLoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="77" />
     <option name="y" value="171" />
     <option name="width" value="1489" />
@@ -898,7 +898,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1379,10 +1379,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="92" column="49" lean-forward="true" selection-start-line="92" selection-start-column="49" selection-end-line="92" selection-end-column="49" />
+        <state relative-caret-position="544">
+          <caret line="105" column="100" lean-forward="false" selection-start-line="105" selection-start-column="100" selection-end-line="105" selection-end-column="100" />
           <folding>
             <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
             <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
@@ -1392,18 +1400,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="238">
+          <caret line="16" column="92" lean-forward="false" selection-start-line="16" selection-start-column="92" selection-end-line="16" selection-end-column="92" />
           <folding />
         </state>
       </provider>

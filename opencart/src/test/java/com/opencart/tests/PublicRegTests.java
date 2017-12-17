@@ -94,7 +94,7 @@ public class PublicRegTests extends TestBase {
         app.getPublicNaviPage().clickRegister();
         app.getPublicRegPage().fillRegistrationForm(regData);
 
-        assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success");
+        assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success", "User isn't registered!");
     }
 
     @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2)
@@ -103,6 +103,6 @@ public class PublicRegTests extends TestBase {
         app.getPublicNaviPage().clickRegister();
         app.getPublicRegPage().fillRegistrationForm(regData);
 
-        assertEquals(app.getPublicRegPage().getRegisterLinkTitle(), "Register");
+        assertEquals(app.getPublicRegPage().getRegisterLinkTitle(), "Register", "User is registered!");
     }
 }
