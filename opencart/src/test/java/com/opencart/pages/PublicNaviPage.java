@@ -20,15 +20,20 @@ public class PublicNaviPage extends PageBase {
     }
 
     public void clickRegister() {
-        click(By.xpath("//a[contains(@href, 'register')]"));
+        click(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[contains(@href, 'register')]"));
         wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Account']")));
     }
 
-    public List<WebElement> getMenuItems() {
-        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
+    public void clickLogin() {
+        click(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']//a[contains(@href, 'login')]"));
+        wait.until(visibilityOfElementLocated(By.xpath("//div[@class = 'well']/h2[text() = 'Returning Customer']")));
     }
 
     public void clickLogout() {
         click(By.xpath("//a[contains(@href, 'logout')]"));
+    }
+
+    public List<WebElement> getMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
     }
 }
