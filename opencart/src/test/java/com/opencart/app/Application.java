@@ -1,6 +1,5 @@
 package com.opencart.app;
 
-import com.opencart.models.PublicLoginData;
 import com.opencart.pages.PublicLoginPage;
 import com.opencart.pages.PublicNaviPage;
 import com.opencart.pages.PublicRegPage;

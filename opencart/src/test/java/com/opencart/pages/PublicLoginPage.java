@@ -13,13 +13,16 @@ public class PublicLoginPage extends PageBase {
     }
 
     public void fillLoginForm(PublicLoginData loginData) {
-        input(By.xpath("//input[@id = 'input-email']"), "test@test.test");
-        input(By.xpath("//input[@id = 'input-password']"), "test");
+        input(By.xpath("//input[@id = 'input-email']"), loginData.getEmail());
+        input(By.xpath("//input[@id = 'input-password']"), loginData.getPassword());
         click(By.xpath("//input[@value = 'Login']"));
-        wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")));
     }
 
     public String getMyAccountTitle() {
-        return wd.findElement(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']")).getText();
+        return wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'content']/h2[text() = 'My Account']"))).getText();
+    }
+
+    public String getLoginFormTitle() {
+        return wait.until(visibilityOfElementLocated(By.xpath("//div[@class = 'well']/h2[text() = 'Returning Customer']"))).getText();
     }
 }
