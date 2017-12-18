@@ -62,7 +62,6 @@ public class PageBase {
     }
 
     public void openNewWindow(String url) {
-        String currentWindow = wd.getWindowHandle();
         Set<String> currentWindows = wd.getWindowHandles();
         js.executeScript("window.open('" + url + "');");
         String newWindow  = wait.until(waitNewWindow(currentWindows));
