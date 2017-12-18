@@ -1,10 +1,9 @@
 package com.opencart.app;
 
-import com.opencart.pages.PublicLoginPage;
-import com.opencart.pages.PublicNaviPage;
-import com.opencart.pages.PublicRegPage;
+import com.opencart.pages.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.HasCapabilities;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,10 +18,12 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 public class Application {
     private WebDriver wd;
     private WebDriverWait wait;
+    private JavascriptExecutor js;
     private String browser;
     private PublicRegPage publicRegPage;
     private PublicNaviPage publicNaviPage;
     private PublicLoginPage publicLoginPage;
+    private AdminNaviPage adminNaviPage;
     //Constructor
     public Application(String browser) {
         this.browser = browser;
@@ -32,6 +33,7 @@ public class Application {
         wd = getWebDriver(browser);
         wd.manage().timeouts().implicitlyWait(5, SECONDS);
         wait = new WebDriverWait(wd, 10);
+        js = (JavascriptExecutor) wd;
         wd.manage().window().maximize();
         wd.navigate().to("http://localhost/opencart/");
         wait.until(visibilityOfElementLocated(By.xpath("//a[text() = 'Your Store']")));
@@ -39,6 +41,7 @@ public class Application {
         publicRegPage = new PublicRegPage(wd, wait);
         publicNaviPage = new PublicNaviPage(wd, wait);
         publicLoginPage = new PublicLoginPage(wd, wait);
+        adminNaviPage = new AdminNaviPage(wd, wait);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }
@@ -60,6 +63,10 @@ public class Application {
 
     public PublicLoginPage getPublicLoginPage() {
         return publicLoginPage;
+    }
+
+    public AdminNaviPage getAdminNaviPage() {
+        return adminNaviPage;
     }
 
     public WebDriver getWebDriver(String browser) {
