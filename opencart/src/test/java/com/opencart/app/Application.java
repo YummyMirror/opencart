@@ -11,32 +11,39 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import sun.plugin.dom.exception.BrowserNotSupportedException;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import static java.lang.System.setProperty;
 import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElementLocated;
 
 public class Application {
     private WebDriver wd;
     private WebDriverWait wait;
     private JavascriptExecutor js;
     private String browser;
+    private Properties properties;
     private PublicRegPage publicRegPage;
     private PublicNaviPage publicNaviPage;
     private PublicLoginPage publicLoginPage;
     private AdminNaviPage adminNaviPage;
     private AdminCategoryPage adminCategoryPage;
+
     //Constructor
     public Application(String browser) {
         this.browser = browser;
     }
 
-    public void init() {
+    public void init() throws IOException {
+        initProperties();
         wd = getWebDriver(browser);
         wd.manage().timeouts().implicitlyWait(5, SECONDS);
         wait = new WebDriverWait(wd, 10);
         js = (JavascriptExecutor) wd;
         wd.manage().window().maximize();
-        wd.navigate().to("http://localhost/opencart/");
+        wd.navigate().to(properties.getProperty("baseUrl"));
         wait.until(visibilityOfElementLocated(By.xpath("//a[text() = 'Your Store']")));
         //Delegates
         publicRegPage = new PublicRegPage(wd, wait);
@@ -91,5 +98,16 @@ public class Application {
                 throw new BrowserNotSupportedException("Incorrect browser type input!");
         }
         return wd;
+    }
+
+    public Properties getProperties() {
+        return properties;
+    }
+
+    public void initProperties() throws IOException {
+        properties = new Properties();
+        File fileWithLocalProperties = new File("src/test/resources/properties/local.properties");
+        FileReader reader = new FileReader(fileWithLocalProperties);
+        properties.load(reader);
     }
 }
