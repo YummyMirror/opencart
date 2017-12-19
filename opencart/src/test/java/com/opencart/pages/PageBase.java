@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.security.SecureRandom;
 import java.util.List;
 import java.util.Set;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -41,6 +42,20 @@ public class PageBase {
                 wd.findElement(locator).click();
                 wd.findElement(locator).clear();
                 wd.findElement(locator).sendKeys(value);
+            }
+        }
+    }
+
+    public void inputWithHints(By locator, String value, By hintsLocator) {
+        if (value != null) {
+            String currentValue = wd.findElement(locator).getAttribute("value");
+            if (!value.equals(currentValue)) {
+                wd.findElement(locator).sendKeys(value);
+                List<WebElement> hints = wait.until(visibilityOfAllElementsLocatedBy(hintsLocator));
+                if (hints.size() > 1)
+                    hints.stream().skip(1).findAny().get().click();
+                else
+                    hints.stream().findAny().get().click();
             }
         }
     }
@@ -117,8 +132,12 @@ public class PageBase {
         click(locator);
         click(By.xpath("//div[@class = 'popover-content']/button[@id = 'button-image']"));
         wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'modal-image']//div[@class = 'modal-content']")));
-        wd.findElements(By.xpath("//div[@class = 'col-sm-3 col-xs-6 text-center']/a")).stream().findAny().get().click();
-        wait.until(attributeContains(By.xpath("//div[@id = 'modal-image']"), "style", "none"));
+        List<WebElement> images = wd.findElements(By.xpath("//div[@class = 'col-sm-3 col-xs-6 text-center']/a"));
+        if (images.size() > 0) {
+            int randomImage = new SecureRandom().nextInt(images.size());
+            images.get(randomImage).click();
+            wait.until(attributeContains(By.xpath("//div[@id = 'modal-image']"), "style", "none"));
+        }
     }
 
     public Boolean areElementsPresent(By locator) {

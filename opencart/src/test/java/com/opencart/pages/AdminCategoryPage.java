@@ -31,8 +31,12 @@ public class AdminCategoryPage extends PageBase {
         if (categoryData.getParent() != null || categoryData.getFilters() != null || categoryData.getTop() != null || categoryData.getColumns() != null ||
                 categoryData.getSortOrder() != null || categoryData.getStatus() != null) {
             openCategoryTab(By.xpath("//a[@href = '#tab-data']"));
+            inputWithHints(By.xpath("//input[@id = 'input-parent']"), categoryData.getParent(), By.xpath("//input[@id = 'input-parent']/../ul/li/a"));
             changePhoto(By.xpath("//a[@id = 'thumb-image']"));
             check(By.xpath("//input[@id = 'input-top']"), categoryData.getTop());
+            input(By.xpath("//input[@id = 'input-column']"), categoryData.getColumns());
+            input(By.xpath("//input[@id = 'input-sort-order']"), categoryData.getSortOrder());
+            radio(By.xpath("//select[@id = 'input-status']/option"), categoryData.getStatus());
         }
         if (categoryData.getSeoKeywords() != null) {
             openCategoryTab(By.xpath("//a[@href = '#tab-seo']"));

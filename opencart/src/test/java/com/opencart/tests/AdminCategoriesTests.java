@@ -21,20 +21,27 @@ public class AdminCategoriesTests extends TestBase {
 
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();
         app.getAdminCategoryPage().openAddNewCategoryPage();
-        AdminCategoryData categoryData = new AdminCategoryData().setCatName("Test_ANA")
+        AdminCategoryData categoryData = new AdminCategoryData().setCatName("Test")
                                                                 .setCatDesc("Desc")
                                                                 .setMetaTagTitle("Test_ANA2")
                                                                 .setMetaTagDesc("Meta tag desc")
                                                                 .setMetaTagKeywords("Meta tag keyword")
-                                                                .setTop(true);
+                                                                .setParent("")
+                                                                .setFilters("Filters")
+                                                                .setTop(true)
+                                                                .setColumns("1")
+                                                                .setSortOrder("1")
+                                                                .setStatus(true)
+                                                                .setSeoKeywords("Seo")
+                                                                .setDesignLayout("Account");
         app.getAdminCategoryPage().inputCategoryForm(categoryData);
 
         int categoryAmountAfter = app.getAdminCategoryPage().getCategoryAmount();
-        assertEquals(categoryAmountAfter, categoryAmountBefore + 1);
+        assertEquals(categoryAmountAfter, categoryAmountBefore + 1, "New category isn't created!");
         //Public side
         app.getAdminNaviPage().closeCurrentWindow();
         app.getPublicNaviPage().refreshPage();
         List<WebElement> listMenuItemsAfter = app.getPublicNaviPage().getListMenuItems();
-        assertEquals(listMenuItemsAfter.size(), listMenuItemsBefore.size() + 1);
+        assertEquals(listMenuItemsAfter.size(), listMenuItemsBefore.size() + 1, "New category isn't presented at Public side!");
     }
 }
