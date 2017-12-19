@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
@@ -35,5 +37,9 @@ public class PublicNaviPage extends PageBase {
 
     public List<WebElement> getMenuItems() {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
+    }
+
+    public List<WebElement> getListMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li")));
     }
 }

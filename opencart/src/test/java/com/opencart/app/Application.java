@@ -24,6 +24,7 @@ public class Application {
     private PublicNaviPage publicNaviPage;
     private PublicLoginPage publicLoginPage;
     private AdminNaviPage adminNaviPage;
+    private AdminCategoryPage adminCategoryPage;
     //Constructor
     public Application(String browser) {
         this.browser = browser;
@@ -42,6 +43,7 @@ public class Application {
         publicNaviPage = new PublicNaviPage(wd, wait);
         publicLoginPage = new PublicLoginPage(wd, wait);
         adminNaviPage = new AdminNaviPage(wd, wait);
+        adminCategoryPage = new AdminCategoryPage(wd, wait);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }
@@ -67,6 +69,10 @@ public class Application {
 
     public AdminNaviPage getAdminNaviPage() {
         return adminNaviPage;
+    }
+
+    public AdminCategoryPage getAdminCategoryPage() {
+        return adminCategoryPage;
     }
 
     public WebDriver getWebDriver(String browser) {

@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import java.util.Set;
@@ -25,7 +26,7 @@ public class PageBase {
     public void check(By locator, Boolean value) {
         WebElement element = wd.findElement(locator);
         if (value.equals(true)) {
-            if (element.getAttribute("checked") == null)
+            if (element.getAttribute("checked") == null || element.getAttribute("checked").equals("false"))
                 element.click();
         } else {
             if (element.getAttribute("checked") != null)
@@ -36,6 +37,17 @@ public class PageBase {
     public void input(By locator, String value) {
         if (value != null) {
             String currentValue = wd.findElement(locator).getAttribute("value");
+            if (!value.equals(currentValue)) {
+                wd.findElement(locator).click();
+                wd.findElement(locator).clear();
+                wd.findElement(locator).sendKeys(value);
+            }
+        }
+    }
+
+    public void textArea(By locator, String value) {
+        if (value != null) {
+            String currentValue = wd.findElement(locator).getText();
             if (!value.equals(currentValue)) {
                 wd.findElement(locator).click();
                 wd.findElement(locator).clear();
@@ -59,6 +71,12 @@ public class PageBase {
 
     public void click(By locator) {
         wait.until(elementToBeClickable(locator)).click();
+    }
+
+    public void select(By locator, String value) {
+        if (value != null) {
+            new Select(wd.findElement(locator)).selectByVisibleText(value);
+        }
     }
 
     public void openNewWindow(String url) {
@@ -89,6 +107,18 @@ public class PageBase {
             handles.removeAll(oldWindows);
             return handles.size() > 0 ? handles.stream().findAny().get() : null;
         };
+    }
+
+    public void refreshPage() {
+        wd.navigate().refresh();
+    }
+
+    public void changePhoto(By locator) {
+        click(locator);
+        click(By.xpath("//div[@class = 'popover-content']/button[@id = 'button-image']"));
+        wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'modal-image']//div[@class = 'modal-content']")));
+        wd.findElements(By.xpath("//div[@class = 'col-sm-3 col-xs-6 text-center']/a")).stream().findAny().get().click();
+        wait.until(attributeContains(By.xpath("//div[@id = 'modal-image']"), "style", "none"));
     }
 
     public Boolean areElementsPresent(By locator) {

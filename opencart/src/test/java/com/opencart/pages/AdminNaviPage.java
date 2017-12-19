@@ -54,4 +54,8 @@ public class AdminNaviPage extends PageBase {
     public List<WebElement> getSubItems(WebElement parent) {
         return parent.findElements(By.xpath("./../ul/li/a"));
     }
+
+    public String getMenuItemHeaderTitle() {
+        return wait.until(visibilityOfElementLocated(By.xpath("//h1"))).getText();
+    }
 }
