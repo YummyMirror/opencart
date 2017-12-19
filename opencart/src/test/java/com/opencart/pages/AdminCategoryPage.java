@@ -21,7 +21,8 @@ public class AdminCategoryPage extends PageBase {
         wait.until(visibilityOfElementLocated(By.xpath("//h3[@class = 'panel-title']")));
     }
 
-    public void inputCategoryForm(AdminCategoryData categoryData) {
+    public void createCategory(AdminCategoryData categoryData) {
+        openAddNewCategoryPage();
         input(By.xpath("//input[@id = 'input-name1']"), categoryData.getCatName());
         textArea(By.xpath("//div[@class = 'note-editable panel-body']"), categoryData.getCatDesc());
         input(By.xpath("//input[@id = 'input-meta-title1']"), categoryData.getMetaTagTitle());

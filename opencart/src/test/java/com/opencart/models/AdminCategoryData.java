@@ -1,18 +1,33 @@
 package com.opencart.models;
 
+import com.google.gson.annotations.Expose;
+
 public class AdminCategoryData {
+    @Expose
     private String catName;
+    @Expose
     private String catDesc;
+    @Expose
     private String metaTagTitle;
+    @Expose
     private String metaTagDesc;
+    @Expose
     private String metaTagKeywords;
+    @Expose
     private String parent;
+    @Expose
     private String filters;
+    @Expose
     private Boolean top;
+    @Expose
     private String columns;
+    @Expose
     private String sortOrder;
+    @Expose
     private Boolean status;
+    @Expose
     private String seoKeywords;
+    @Expose
     private String designLayout;
 
     //Getters

@@ -1,0 +1,72 @@
+[
+  {
+    "catName": "CatName1",
+    "catDesc": "CatDesc",
+    "metaTagTitle": "MetaTagTitle",
+    "metaTagDesc": "MetaTagDesc",
+    "metaTagKeywords": "MetaTagKeywords",
+    "parent": "",
+    "top": true,
+    "columns": "1",
+    "sortOrder": "1",
+    "status": true,
+    "seoKeywords": "abc1",
+    "designLayout": "Account"
+  },
+  {
+    "catName": "CatName2",
+    "catDesc": "CatDesc",
+    "metaTagTitle": "MetaTagTitle",
+    "metaTagDesc": "MetaTagDesc",
+    "metaTagKeywords": "MetaTagKeywords",
+    "parent": "",
+    "top": true,
+    "columns": "1",
+    "sortOrder": "1",
+    "status": true,
+    "seoKeywords": "abc2",
+    "designLayout": "Account"
+  },
+  {
+    "catName": "CatName3",
+    "catDesc": "CatDesc",
+    "metaTagTitle": "MetaTagTitle",
+    "metaTagDesc": "MetaTagDesc",
+    "metaTagKeywords": "MetaTagKeywords",
+    "parent": "",
+    "top": true,
+    "columns": "1",
+    "sortOrder": "1",
+    "status": true,
+    "seoKeywords": "abc3",
+    "designLayout": "Account"
+  },
+  {
+    "catName": "CatName4",
+    "catDesc": "CatDesc",
+    "metaTagTitle": "MetaTagTitle",
+    "metaTagDesc": "MetaTagDesc",
+    "metaTagKeywords": "MetaTagKeywords",
+    "parent": "",
+    "top": true,
+    "columns": "1",
+    "sortOrder": "1",
+    "status": true,
+    "seoKeywords": "abc4",
+    "designLayout": "Account"
+  },
+  {
+    "catName": "CatName5",
+    "catDesc": "CatDesc",
+    "metaTagTitle": "MetaTagTitle",
+    "metaTagDesc": "MetaTagDesc",
+    "metaTagKeywords": "MetaTagKeywords",
+    "parent": "",
+    "top": true,
+    "columns": "1",
+    "sortOrder": "1",
+    "status": true,
+    "seoKeywords": "abc5",
+    "designLayout": "Account"
+  }
+]

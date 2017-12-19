@@ -110,10 +110,12 @@ public class PageBase {
     }
 
     public void loginToAdminSide(String username, String password) {
-        input(By.xpath("//input[@id = 'input-username']"), username);
-        input(By.xpath("//input[@id = 'input-password']"), password);
-        click(By.xpath("//div[@class = 'text-right']/button[@type = 'submit']"));
-        wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Dashboard']")));
+        if (areElementsPresent(By.xpath("//button[text() = ' Login']"))) {
+            input(By.xpath("//input[@id = 'input-username']"), username);
+            input(By.xpath("//input[@id = 'input-password']"), password);
+            click(By.xpath("//div[@class = 'text-right']/button[@type = 'submit']"));
+            wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Dashboard']")));
+        }
     }
 
     public ExpectedCondition<String> waitNewWindow(Set<String> oldWindows) {
