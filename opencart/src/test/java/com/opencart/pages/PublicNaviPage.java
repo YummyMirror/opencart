@@ -3,16 +3,15 @@ package com.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.io.File;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class PublicNaviPage extends PageBase {
     //Constructor
-    public PublicNaviPage(WebDriver wd, WebDriverWait wait) {
-        super(wd, wait);
+    public PublicNaviPage(WebDriver wd, WebDriverWait wait, Actions actions) {
+        super(wd, wait, actions);
     }
 
     public void clickMyAccount() {
@@ -35,11 +34,15 @@ public class PublicNaviPage extends PageBase {
         click(By.xpath("//a[contains(@href, 'logout')]"));
     }
 
-    public List<WebElement> getMenuItems() {
+    public List<WebElement> getAccountMenuItems() {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'dropdown-menu dropdown-menu-right']/li/a")));
     }
 
     public List<WebElement> getListMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li")));
+    }
+
+    public List<WebElement> getNaviMenuItems() {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li")));
     }
 }

@@ -3,13 +3,14 @@ package com.opencart.pages;
 import com.opencart.models.PublicLoginData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class PublicLoginPage extends PageBase {
     //Constructor
-    public PublicLoginPage(WebDriver wd, WebDriverWait wait) {
-        super(wd, wait);
+    public PublicLoginPage(WebDriver wd, WebDriverWait wait, Actions actions) {
+        super(wd, wait, actions);
     }
 
     public void fillLoginForm(PublicLoginData loginData) {

@@ -4,13 +4,14 @@ import com.opencart.models.AdminCategoryData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class AdminCategoryPage extends PageBase {
     //Constructor
-    public AdminCategoryPage(WebDriver wd, WebDriverWait wait) {
-        super(wd, wait);
+    public AdminCategoryPage(WebDriver wd, WebDriverWait wait, Actions actions) {
+        super(wd, wait, actions);
     }
 
     public int getCategoryAmount() {

@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -15,12 +16,14 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 public class PageBase {
     protected WebDriver wd;
     protected WebDriverWait wait;
+    protected Actions actions;
     protected JavascriptExecutor js;
 
     //Constructor
-    public PageBase(WebDriver wd, WebDriverWait wait) {
+    public PageBase(WebDriver wd, WebDriverWait wait, Actions actions) {
         this.wd = wd;
         this.wait = wait;
+        this.actions = actions;
         this.js = (JavascriptExecutor) wd;
     }
 

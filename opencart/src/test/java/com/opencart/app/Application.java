@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import sun.plugin.dom.exception.BrowserNotSupportedException;
@@ -22,6 +23,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOfElem
 public class Application {
     private WebDriver wd;
     private WebDriverWait wait;
+    private Actions actions;
     private JavascriptExecutor js;
     private String browser;
     private Properties properties;
@@ -41,16 +43,17 @@ public class Application {
         wd = getWebDriver(browser);
         wd.manage().timeouts().implicitlyWait(5, SECONDS);
         wait = new WebDriverWait(wd, 10);
+        actions = new Actions(wd);
         js = (JavascriptExecutor) wd;
         wd.manage().window().maximize();
         wd.navigate().to(properties.getProperty("baseUrl"));
         wait.until(visibilityOfElementLocated(By.xpath("//a[text() = 'Your Store']")));
         //Delegates
-        publicRegPage = new PublicRegPage(wd, wait);
-        publicNaviPage = new PublicNaviPage(wd, wait);
-        publicLoginPage = new PublicLoginPage(wd, wait);
-        adminNaviPage = new AdminNaviPage(wd, wait);
-        adminCategoryPage = new AdminCategoryPage(wd, wait);
+        publicRegPage = new PublicRegPage(wd, wait, actions);
+        publicNaviPage = new PublicNaviPage(wd, wait, actions);
+        publicLoginPage = new PublicLoginPage(wd, wait, actions);
+        adminNaviPage = new AdminNaviPage(wd, wait, actions);
+        adminCategoryPage = new AdminCategoryPage(wd, wait, actions);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }

@@ -3,6 +3,7 @@ package com.opencart.pages;
 import com.opencart.models.PublicRegData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -11,8 +12,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class PublicRegPage extends PageBase {
     //Constructor
-    public PublicRegPage(WebDriver wd, WebDriverWait wait) {
-        super(wd, wait);
+    public PublicRegPage(WebDriver wd, WebDriverWait wait, Actions actions) {
+        super(wd, wait, actions);
     }
 
     public void fillRegistrationForm(PublicRegData registrationData) {

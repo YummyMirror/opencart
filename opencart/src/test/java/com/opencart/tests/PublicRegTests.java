@@ -83,7 +83,7 @@ public class PublicRegTests extends TestBase {
     @BeforeMethod
     public void precondition() {
         app.getPublicNaviPage().clickMyAccount();
-        List<WebElement> menuItems = app.getPublicNaviPage().getMenuItems();
+        List<WebElement> menuItems = app.getPublicNaviPage().getAccountMenuItems();
         if (menuItems.size() > 2)
             app.getPublicNaviPage().clickLogout();
     }

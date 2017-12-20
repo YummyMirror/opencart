@@ -3,14 +3,15 @@ package com.opencart.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class AdminNaviPage extends PageBase {
     //Constructor
-    public AdminNaviPage(WebDriver wd, WebDriverWait wait) {
-        super(wd, wait);
+    public AdminNaviPage(WebDriver wd, WebDriverWait wait, Actions actions) {
+        super(wd, wait, actions);
     }
 
     public String getAdminDashboardTitle() {
