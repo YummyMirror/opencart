@@ -42,12 +42,16 @@ public class PublicNaviPage extends PageBase {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li")));
     }
 
-    public List<WebElement> getNaviMenuItems() {
+    public List<WebElement> getNaviMenuItemsWithSubItems() {
         return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li[@class = 'dropdown']")));
     }
 
+    public List<WebElement> getAllNaviMenuItems() {
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li/a")));
+    }
+
     public void naviMenuItemsTransition(List<WebElement> menuItems) {
-        menuItems = getNaviMenuItems();
+        menuItems = getNaviMenuItemsWithSubItems();
         for (int i = 0; i < menuItems.size(); i++) {
             actions.moveToElement(menuItems.get(i)).build().perform();
             List<WebElement> subItems = menuItems.get(i).findElements(By.xpath(".//li/a"));
@@ -55,5 +59,29 @@ public class PublicNaviPage extends PageBase {
                 actions.moveToElement(subItems.get(j)).build().perform();
             }
         }
+    }
+
+    public void openNeededNaviMenuItem(String menuItem, String subMenuItem) {
+        List<WebElement> menuItems = getAllNaviMenuItems();
+        for (int i = 0; i < menuItems.size(); i++) {
+            List<WebElement> menus = getAllNaviMenuItems();
+            if (menuItem.equals(menus.get(i).getText())) {
+                actions.moveToElement(menus.get(i)).build().perform();
+                List<WebElement> subMenuItems = menus.get(i).findElements(By.xpath("./..//li/a"));
+                if (subMenuItems.size() > 0) {
+                    for (int j = 0; j < subMenuItems.size(); j++) {
+                        if (subMenuItems.get(j).getText().contains(subMenuItem)) {
+                            actions.moveToElement(subMenuItems.get(j)).click().build().perform();
+                            break;
+                        }
+                    }
+                } else
+                    menus.get(i).click();
+            }
+        }
+    }
+
+    public String getNaviMenuItemTitle() {
+        return wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'content']/h2"))).getText();
     }
 }

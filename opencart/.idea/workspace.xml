@@ -70,15 +70,18 @@
       <file leaf-file-name="PublicNaviPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="48" column="68" lean-forward="false" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state relative-caret-position="476">
+              <caret line="63" column="76" lean-forward="false" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
               <folding>
                 <element signature="method#clickMyAccount#0;class#PublicNaviPage#0" expanded="false" />
                 <element signature="method#clickRegister#0;class#PublicNaviPage#0" expanded="false" />
                 <element signature="method#clickLogin#0;class#PublicNaviPage#0" expanded="false" />
                 <element signature="method#getAccountMenuItems#0;class#PublicNaviPage#0" expanded="false" />
                 <element signature="method#getListMenuItems#0;class#PublicNaviPage#0" expanded="false" />
+                <element signature="method#getNaviMenuItemsWithSubItems#0;class#PublicNaviPage#0" expanded="false" />
                 <element signature="method#naviMenuItemsTransition#0;class#PublicNaviPage#0" expanded="false" />
+                <element signature="method#openNeededNaviMenuItem#0;class#PublicNaviPage#0" expanded="false" />
+                <element signature="method#getNaviMenuItemTitle#0;class#PublicNaviPage#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,8 +90,8 @@
       <file leaf-file-name="PublicIndexPageTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="204">
+              <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -604,39 +607,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.PublicIndexPageTests.naviMenuTransitionTest">
-    <configuration name="AdminCategoriesTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="opencart_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.AdminCategoriesTests" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
+  <component name="RunManager" selected="TestNG.PublicIndexPageTests.openNaviMenuItemTest">
     <configuration name="AdminCategoriesTests.createMainCategories" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -715,6 +686,38 @@
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
       <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
       <option name="METHOD_NAME" value="naviMenuTransitionTest" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="PublicIndexPageTests.openNaviMenuItemTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="opencart_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.opencart.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
+      <option name="METHOD_NAME" value="openNaviMenuItemTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -847,18 +850,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.dsfusdhf" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.PublicLoginTests" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.dsfusdhf" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.PublicLoginTests" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openNaviMenuItemTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.PublicLoginTests" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.dsfusdhf" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openNaviMenuItemTest" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.PublicLoginTests" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.dsfusdhf" />
       </list>
     </recent_temporary>
   </component>
@@ -876,35 +879,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.19 at 23h 22m 43s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 20m 33s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.19 at 23h 25m 47s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 21m 09s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 28m 02s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 21m 28s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 28m 28s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 22m 07s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 35m 06s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 22m 18s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 37m 36s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 24m 48s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 38m 06s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 27m 06s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicIndexPageTests_naviMenuTransitionTest - 2017.12.20 at 09h 40m 01s.xml">
-      <configuration name="PublicIndexPageTests.naviMenuTransitionTest" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 27m 23s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicLoginTests - 2017.12.20 at 09h 18m 47s.xml">
-      <configuration name="PublicLoginTests" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 28m 01s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="PublicLoginTests - 2017.12.20 at 09h 27m 23s.xml">
-      <configuration name="PublicLoginTests" configurationId="TestNG" />
+    <history-entry file="PublicIndexPageTests_openNaviMenuItemTest - 2017.12.20 at 10h 28m 28s.xml">
+      <configuration name="PublicIndexPageTests.openNaviMenuItemTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -947,7 +950,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="106" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1462,23 +1465,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="48" column="68" lean-forward="false" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="476">
+          <caret line="63" column="76" lean-forward="false" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
           <folding>
             <element signature="method#clickMyAccount#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#clickRegister#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#clickLogin#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#getAccountMenuItems#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#getListMenuItems#0;class#PublicNaviPage#0" expanded="false" />
+            <element signature="method#getNaviMenuItemsWithSubItems#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#naviMenuItemsTransition#0;class#PublicNaviPage#0" expanded="false" />
+            <element signature="method#openNeededNaviMenuItem#0;class#PublicNaviPage#0" expanded="false" />
+            <element signature="method#getNaviMenuItemTitle#0;class#PublicNaviPage#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="204">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="36" />
           <folding />
         </state>
       </provider>
