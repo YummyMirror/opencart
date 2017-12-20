@@ -18,4 +18,9 @@ public class PublicIndexPageTests extends TestBase {
 
         assertEquals(app.getPublicNaviPage().getNaviMenuItemTitle(), "PC");
     }
+
+    @Test
+    public void openAllNaviMenuItemsTest() {
+        app.getPublicNaviPage().openAllNaviMenuItems();
+    }
 }

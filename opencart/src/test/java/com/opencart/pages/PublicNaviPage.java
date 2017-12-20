@@ -62,8 +62,7 @@ public class PublicNaviPage extends PageBase {
     }
 
     public void openNeededNaviMenuItem(String menuItem, String subMenuItem) {
-        List<WebElement> menuItems = getAllNaviMenuItems();
-        for (int i = 0; i < menuItems.size(); i++) {
+        for (int i = 0; i < getAllNaviMenuItems().size(); i++) {
             List<WebElement> menus = getAllNaviMenuItems();
             if (menuItem.equals(menus.get(i).getText())) {
                 actions.moveToElement(menus.get(i)).build().perform();
@@ -77,6 +76,26 @@ public class PublicNaviPage extends PageBase {
                     }
                 } else
                     menus.get(i).click();
+            }
+        }
+    }
+
+    public void openAllNaviMenuItems() {
+        for (int i = 0; i < getAllNaviMenuItems().size(); i++) {
+            List<WebElement> menus = getAllNaviMenuItems();
+            actions.moveToElement(menus.get(i)).build().perform();
+            List<WebElement> subMenuItems = menus.get(i).findElements(By.xpath("./..//li/a"));
+            if (subMenuItems.size() > 0) {
+                for (int j = 0; j < subMenuItems.size(); j++) {
+                    List<WebElement> menus2 = getAllNaviMenuItems();
+                    actions.moveToElement(menus2.get(i)).build().perform();
+                    List<WebElement> subMenuItems2 = menus2.get(i).findElements(By.xpath("./..//li/a"));
+                    subMenuItems2.get(j).click();
+                    wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'content']/h2")));
+                }
+            } else {
+                menus.get(i).click();
+                wait.until(visibilityOfElementLocated(By.xpath("//div[@id = 'content']/h2")));
             }
         }
     }
