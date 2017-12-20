@@ -8,8 +8,6 @@ public class PublicIndexPageTests extends TestBase {
     @Test
     public void naviMenuTransitionTest() {
         List<WebElement> naviMenuItems = app.getPublicNaviPage().getNaviMenuItems();
-        for (int i = 0; i < naviMenuItems.size(); i++) {
-
-        }
+        app.getPublicNaviPage().naviMenuItemsTransition(naviMenuItems);
     }
 }

@@ -43,6 +43,17 @@ public class PublicNaviPage extends PageBase {
     }
 
     public List<WebElement> getNaviMenuItems() {
-        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li")));
+        return wait.until(visibilityOfAllElementsLocatedBy(By.xpath("//ul[@class = 'nav navbar-nav']/li[@class = 'dropdown']")));
+    }
+
+    public void naviMenuItemsTransition(List<WebElement> menuItems) {
+        menuItems = getNaviMenuItems();
+        for (int i = 0; i < menuItems.size(); i++) {
+            actions.moveToElement(menuItems.get(i)).build().perform();
+            List<WebElement> subItems = menuItems.get(i).findElements(By.xpath(".//li/a"));
+            for (int j = 0; j < subItems.size(); j++) {
+                actions.moveToElement(subItems.get(j)).build().perform();
+            }
+        }
     }
 }
