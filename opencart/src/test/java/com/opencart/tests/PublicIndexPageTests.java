@@ -6,20 +6,20 @@ import java.util.List;
 import static org.testng.Assert.*;
 
 public class PublicIndexPageTests extends TestBase {
-    @Test
+    @Test(enabled = true, priority = 2)
     public void naviMenuTransitionTest() {
         List<WebElement> naviMenuItems = app.getPublicNaviPage().getNaviMenuItemsWithSubItems();
         app.getPublicNaviPage().naviMenuItemsTransition(naviMenuItems);
     }
 
-    @Test
+    @Test(enabled = true, priority = 1)
     public void openNaviMenuItemTest() {
         app.getPublicNaviPage().openNeededNaviMenuItem("Desktops", "PC");
 
         assertEquals(app.getPublicNaviPage().getNaviMenuItemTitle(), "PC");
     }
 
-    @Test
+    @Test(enabled = true, priority = 0)
     public void openAllNaviMenuItemsTest() {
         app.getPublicNaviPage().openAllNaviMenuItems();
     }

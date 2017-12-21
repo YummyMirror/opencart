@@ -97,6 +97,21 @@ public class PageBase {
         }
     }
 
+    public void selectDate(By locator, int date) {
+        click(locator);
+        WebElement widget = wait.until(visibilityOf(wd.findElement(By.xpath("//div[contains(@class, 'datetimepicker-widget')]"))));
+        List<WebElement> cells = widget.findElements(By.xpath(".//tbody//td[@class = 'day' or @class = 'day active today']"));
+        if (date > 0 && date <= cells.size()) {
+            for (int i = 0; i < cells.size(); i++) {
+                if (date == Integer.parseInt(cells.get(i).getText())) {
+                    cells.get(i).click();
+                    wait.until(attributeContains(widget, "style", "display: none"));
+                    break;
+                }
+            }
+        }
+    }
+
     public void openNewWindow(String url) {
         Set<String> currentWindows = wd.getWindowHandles();
         js.executeScript("window.open('" + url + "');");

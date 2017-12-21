@@ -70,7 +70,7 @@ public class PublicNaviPage extends PageBase {
                 if (subMenuItems.size() > 0) {
                     for (int j = 0; j < subMenuItems.size(); j++) {
                         if (subMenuItems.get(j).getText().contains(subMenuItem)) {
-                            actions.moveToElement(subMenuItems.get(j)).click().build().perform();
+                            subMenuItems.get(j).click();
                             break;
                         }
                     }
