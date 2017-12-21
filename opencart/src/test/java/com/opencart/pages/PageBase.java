@@ -160,6 +160,11 @@ public class PageBase {
         }
     }
 
+    public void openAdminSideAndLogin(String url, String login, String password) {
+        openNewWindow(url);
+        loginToAdminSide(login, password);
+    }
+
     public Boolean areElementsPresent(By locator) {
         return wd.findElements(locator).size() > 0;
     }

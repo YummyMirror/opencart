@@ -8,8 +8,7 @@ import static org.testng.Assert.*;
 public class AdminProductsTests extends TestBase{
     @Test
     public void createProductTest() {
-        app.getAdminCategoryPage().openNewWindow(app.getProperties().getProperty("adminUrl"));
-        app.getAdminNaviPage().loginToAdminSide(app.getProperties().getProperty("adminLogin"), app.getProperties().getProperty("adminPassword"));
+        app.getAdminProductPage().openAdminSideAndLogin(app.getProperties().getProperty("adminUrl"), app.getProperties().getProperty("adminLogin"), app.getProperties().getProperty("adminPassword"));
         assertEquals(app.getAdminNaviPage().getAdminDashboardTitle(), "Dashboard", "User isn't logged in to admin side!");
 
         app.getAdminNaviPage().openMenuItem("Catalog", "Products", "");
