@@ -40,8 +40,7 @@ public class AdminCategoriesTests extends TestBase {
         //Public side
         List<WebElement> listMenuItemsBefore = app.getPublicNaviPage().getListMenuItems();
         //Admin side
-        app.getAdminCategoryPage().openAdminSideAndLogin(app.getProperties().getProperty("adminUrl"), app.getProperties().getProperty("adminLogin"), app.getProperties().getProperty("adminPassword"));
-        assertEquals(app.getAdminNaviPage().getAdminDashboardTitle(), "Dashboard", "User isn't logged in to admin side!");
+        app.getAdminCategoryPage().openAdminSideAndLogin();
 
         app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
         assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");

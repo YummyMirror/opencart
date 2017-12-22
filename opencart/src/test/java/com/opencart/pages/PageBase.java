@@ -160,9 +160,10 @@ public class PageBase {
         }
     }
 
-    public void openAdminSideAndLogin(String url, String login, String password) {
-        openNewWindow(url);
-        loginToAdminSide(login, password);
+    public void openAdminSideAndLogin() {
+        openNewWindow("http://localhost/opencart/admin/");
+        loginToAdminSide("admin", "admin");
+        wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Dashboard']")));
     }
 
     public Boolean areElementsPresent(By locator) {
