@@ -31,6 +31,27 @@ public class AdminProductPage extends PageBase {
         wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
     }
 
+    public void deleteProduct(AdminProductData productData) {
+        selectProduct(productData.getId());
+        click(By.xpath("//button[@data-original-title = 'Delete']"));
+        wd.switchTo().alert().accept();
+        wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
+    }
+
+    public void selectProduct(int product) {
+        if (areElementsPresent(By.xpath("//a[text() = '|<']")))
+            click(By.xpath("//a[text() = '|<']"));
+        for (int i = 1; i <= getPagination(); i++) {
+            if (areElementsPresent(By.xpath("//input[@value = '" + product + "']"))) {
+                wd.findElement(By.xpath("//input[@value = '" + product + "']")).click();
+                break;
+            } else {
+                if (areElementsPresent(By.xpath("//a[text() = '>']")))
+                    click(By.xpath("//a[text() = '>']"));
+            }
+        }
+    }
+
     public void openProductTab(By locator) {
         click(locator);
         wait.until(attributeContains(locator, "aria-expanded", "true"));

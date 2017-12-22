@@ -61,4 +61,18 @@ public class AdminProductsTests extends TestBase{
         productsBefore.add(productData);
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
+
+    @Test(enabled = true, priority = 1)
+    public void deleteProductTest() {
+        Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
+        AdminProductData deletedProduct = productsBefore.stream().findAny().get();
+        app.getAdminProductPage().deleteProduct(deletedProduct);
+
+        Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
+        //Asserting by SIZEs
+        assertEquals(productsAfter.size(), productsBefore.size() - 1, "Size of collections aren't equal!");
+        //Asserting by COLLECTIONs
+        productsBefore.remove(deletedProduct);
+        assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
+    }
 }
