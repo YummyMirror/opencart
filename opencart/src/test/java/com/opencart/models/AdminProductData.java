@@ -1,10 +1,16 @@
 package com.opencart.models;
 
+import com.google.gson.annotations.Expose;
+
 public class AdminProductData {
     private int id = Integer.MAX_VALUE;
+    @Expose
     private String name;
+    @Expose
     private String metaTagTitle;
+    @Expose
     private String model;
+    @Expose
     private int dateAvailable;
 
     //Getters
