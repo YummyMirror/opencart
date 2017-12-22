@@ -4,5 +4,17 @@
     "metaTagTitle": "Tag",
     "model": "TestModel",
     "dateAvailable": 12
+  },
+  {
+    "name": "ProductName2",
+    "metaTagTitle": "Tag2",
+    "model": "TestModel2",
+    "dateAvailable": 15
+  },
+  {
+    "name": "ProductName3",
+    "metaTagTitle": "Tag3",
+    "model": "TestModel3",
+    "dateAvailable": 17
   }
 ]

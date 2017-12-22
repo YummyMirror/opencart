@@ -88,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="31" />
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
               </folding>
@@ -498,6 +498,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/AdminProductData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Product.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
       </list>
     </option>
@@ -619,7 +620,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AdminProductsTests.createProductTest">
+  <component name="RunManager" selected="TestNG.AdminProductsTests">
     <configuration name="AdminCategoriesTests.createMainCategories" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -636,6 +637,38 @@
       <option name="METHOD_NAME" value="createMainCategories" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="AdminProductsTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.opencart.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="opencart_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.opencart.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.AdminProductsTests" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -735,38 +768,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicIndexPageTests.openAllNaviMenuItemsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="opencart_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
-      <option name="METHOD_NAME" value="openAllNaviMenuItemsTest" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -850,17 +851,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Product" />
       <item index="1" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.AdminProductsTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Product" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.AdminProductsTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Product" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests" />
       </list>
     </recent_temporary>
   </component>
@@ -881,17 +882,17 @@
     <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.21 at 23h 05m 50s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2017.12.21 at 22h 37m 05s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
+    <history-entry file="AdminProductsTests - 2017.12.22 at 22h 36m 42s.xml">
+      <configuration name="AdminProductsTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2017.12.21 at 22h 41m 13s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
+    <history-entry file="AdminProductsTests - 2017.12.22 at 22h 45m 02s.xml">
+      <configuration name="AdminProductsTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2017.12.21 at 22h 42m 40s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
+    <history-entry file="AdminProductsTests - 2017.12.22 at 22h 46m 05s.xml">
+      <configuration name="AdminProductsTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2017.12.21 at 22h 57m 15s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
+    <history-entry file="AdminProductsTests - 2017.12.22 at 22h 47m 41s.xml">
+      <configuration name="AdminProductsTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="AdminProductsTests_createProductTest - 2017.12.21 at 23h 03m 56s.xml">
       <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
@@ -952,12 +953,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java</url>
-          <line>40</line>
+          <line>41</line>
           <properties />
-          <option name="timeStamp" value="133" />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java</url>
+          <line>52</line>
+          <properties />
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="134" />
+      <option name="time" value="136" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1178,13 +1185,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -1379,14 +1379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1433,10 +1425,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="31" />
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
           </folding>

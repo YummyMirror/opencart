@@ -2,8 +2,9 @@ package com.opencart.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.opencart.models.AdminCategoryData;
 import com.opencart.models.AdminProductData;
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.BufferedReader;
@@ -36,12 +37,19 @@ public class AdminProductsTests extends TestBase{
         return list.stream().map(l -> new Object[] {l}).iterator();
     }
 
+    @BeforeMethod
+    public void precondition() {
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
+            app.getAdminProductPage().openAdminSideAndLogin();
+            if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/product/add')]"))) {
+                app.getAdminNaviPage().openMenuItem("Catalog", "Products", "");
+                assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Products", "Products menu item isn't opened!");
+            }
+        }
+    }
+
     @Test(enabled = true, dataProvider = "validProdDataJson", priority = 1)
     public void createProductTest(AdminProductData productData) {
-        app.getAdminProductPage().openAdminSideAndLogin();
-        app.getAdminNaviPage().openMenuItem("Catalog", "Products", "");
-        assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Products", "Products menu item isn't opened!");
-
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
 
