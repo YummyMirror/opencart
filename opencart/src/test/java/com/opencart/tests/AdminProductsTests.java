@@ -48,7 +48,7 @@ public class AdminProductsTests extends TestBase{
         }
     }
 
-    @Test(enabled = true, dataProvider = "validProdDataJson", priority = 1)
+    @Test(enabled = true, dataProvider = "validProdDataJson", priority = 0)
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
