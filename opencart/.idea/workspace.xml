@@ -74,8 +74,8 @@
       <file leaf-file-name="AdminProductPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+            <state relative-caret-position="408">
+              <caret line="90" column="33" lean-forward="false" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
               <folding>
                 <element signature="method#createProduct#0;class#AdminProductPage#0" expanded="false" />
                 <element signature="method#deleteProduct#0;class#AdminProductPage#0" expanded="false" />
@@ -95,10 +95,12 @@
       <file leaf-file-name="AdminProductsTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
+                <element signature="method#validProdDataEditJson#0;class#AdminProductsTests#0" expanded="false" />
+                <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
                 <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
                 <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
               </folding>
@@ -509,6 +511,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/AdminProductData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminProductPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validProductDataEdit.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
       </list>
     </option>
@@ -898,9 +901,6 @@
     <history-entry file="AdminProductsTests_createProductTest - 2017.12.23 at 19h 42m 42s.xml">
       <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminProductsTests_deleteProductTest - 2017.12.22 at 23h 45m 53s.xml">
-      <configuration name="AdminProductsTests.deleteProductTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AdminProductsTests_deleteProductTest - 2017.12.22 at 23h 53m 06s.xml">
       <configuration name="AdminProductsTests.deleteProductTest" configurationId="TestNG" />
     </history-entry>
@@ -919,9 +919,12 @@
     <history-entry file="AdminProductsTests_editProductTest - 2017.12.23 at 20h 00m 36s.xml">
       <configuration name="AdminProductsTests.editProductTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AdminProductsTests_editProductTest - 2017.12.23 at 20h 14m 08s.xml">
+      <configuration name="AdminProductsTests.editProductTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -965,13 +968,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1383,14 +1379,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1424,10 +1412,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validProductDataEdit.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+        <state relative-caret-position="408">
+          <caret line="90" column="33" lean-forward="false" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
           <folding>
             <element signature="method#createProduct#0;class#AdminProductPage#0" expanded="false" />
             <element signature="method#deleteProduct#0;class#AdminProductPage#0" expanded="false" />
@@ -1445,10 +1449,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="method#validProdDataEditJson#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
             <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
             <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
           </folding>

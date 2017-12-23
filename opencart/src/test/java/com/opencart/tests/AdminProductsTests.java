@@ -37,6 +37,25 @@ public class AdminProductsTests extends TestBase{
         return list.stream().map(l -> new Object[] {l}).iterator();
     }
 
+    @DataProvider
+    public Iterator<Object[]> validProdDataEditJson() throws IOException {
+        File file = new File("src/test/resources/dataProviders/validProductDataEdit.json");
+        FileReader reader = new FileReader(file);
+        BufferedReader buffReader = new BufferedReader(reader);
+        String line = buffReader.readLine();
+        String json = "";
+        while (line != null) {
+            json += line;
+            line = buffReader.readLine();
+        }
+        Gson gson = new Gson();
+        Type collectionType = new TypeToken<List<AdminProductData>>(){}.getType();
+        List<AdminProductData> list = gson.fromJson(json, collectionType);
+        reader.close();
+        buffReader.close();
+        return list.stream().map(l -> new Object[] {l}).iterator();
+    }
+
     @BeforeMethod
     public void precondition() {
         if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
@@ -76,15 +95,11 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test
-    public void editProductTest() {
+    @Test(enabled = true, dataProvider = "validProdDataEditJson", priority = 2)
+    public void editProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData editedProduct = productsBefore.stream().findAny().get();
-        AdminProductData productData = new AdminProductData().setId(editedProduct.getId())
-                                                             .setName("EditedName")
-                                                             .setMetaTagTitle("Blah")
-                                                             .setModel("EditedModel")
-                                                             .setDateAvailable(15);
+        productData.setId(editedProduct.getId());
         app.getAdminProductPage().editProduct(productData);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();

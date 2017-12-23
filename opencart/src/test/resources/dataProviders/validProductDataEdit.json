@@ -1,0 +1,20 @@
+[
+  {
+    "name": "EditName1",
+    "metaTagTitle": "Tag1",
+    "model": "EditModel1",
+    "dateAvailable": 19
+  },
+  {
+    "name": "EditName2",
+    "metaTagTitle": "Tag2",
+    "model": "EditModel2",
+    "dateAvailable": 23
+  },
+  {
+    "name": "EditName3",
+    "metaTagTitle": "Tag3",
+    "model": "EditModel3",
+    "dateAvailable": 25
+  }
+]
