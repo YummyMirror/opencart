@@ -166,6 +166,10 @@ public class PageBase {
         wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Dashboard']")));
     }
 
+    public void back() {
+        wd.navigate().back();
+    }
+
     public Boolean areElementsPresent(By locator) {
         return wd.findElements(locator).size() > 0;
     }

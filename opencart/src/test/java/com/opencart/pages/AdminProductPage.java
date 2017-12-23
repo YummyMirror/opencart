@@ -40,6 +40,16 @@ public class AdminProductPage extends PageBase {
         wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
     }
 
+    public AdminProductData getInsideData(AdminProductData productData) {
+        openEditPage(productData.getId());
+        wait.until(visibilityOfElementLocated(By.xpath("//h3[@class = 'panel-title']")));
+        String name = wd.findElement(By.xpath("//input[@id = 'input-name1']")).getAttribute("value");
+        openProductTab(By.xpath("//a[@href = '#tab-data']"));
+        String model = wd.findElement(By.xpath("//input[@id = 'input-model']")).getAttribute("value");
+        back();
+        return new AdminProductData().setName(name).setModel(model);
+    }
+
     public void selectProduct(int product) {
         if (areElementsPresent(By.xpath("//a[text() = '|<']")))
             click(By.xpath("//a[text() = '|<']"));
@@ -98,7 +108,10 @@ public class AdminProductPage extends PageBase {
                 List<WebElement> cells = element.findElements(By.xpath("./td"));
                 int id = Integer.parseInt(cells.get(0).findElement(By.xpath("./input")).getAttribute("value"));
                 String name = cells.get(2).getText();
-                AdminProductData productData = new AdminProductData().setId(id).setName(name);
+                String model = cells.get(3).getText();
+                AdminProductData productData = new AdminProductData().setId(id)
+                                                                     .setName(name)
+                                                                     .setModel(model);
                 set.add(productData);
             }
             if (areElementsPresent(By.xpath("//a[text() = '>']")))

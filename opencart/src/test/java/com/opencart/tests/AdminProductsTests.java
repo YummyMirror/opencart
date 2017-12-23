@@ -110,4 +110,15 @@ public class AdminProductsTests extends TestBase{
         productsBefore.add(productData);
         assertEquals(productsAfter, productsBefore);
     }
+
+    @Test(enabled = true, priority = 2)
+    public void compareOutsideVsInsideData() {
+        Set<AdminProductData> products = app.getAdminProductPage().getProducts();
+        AdminProductData outsideData = products.stream().findAny().get();
+        AdminProductData insideData = app.getAdminProductPage().getInsideData(outsideData);
+
+        //Asserting by both Name and Model
+        assertEquals(insideData.getName(), outsideData.getName());
+        assertEquals(insideData.getModel(), outsideData.getModel());
+    }
 }
