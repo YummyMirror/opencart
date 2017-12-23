@@ -75,4 +75,24 @@ public class AdminProductsTests extends TestBase{
         productsBefore.remove(deletedProduct);
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
+
+    @Test
+    public void editProductTest() {
+        Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
+        AdminProductData editedProduct = productsBefore.stream().findAny().get();
+        AdminProductData productData = new AdminProductData().setId(editedProduct.getId())
+                                                             .setName("EditedName")
+                                                             .setMetaTagTitle("Blah")
+                                                             .setModel("EditedModel")
+                                                             .setDateAvailable(15);
+        app.getAdminProductPage().editProduct(productData);
+
+        Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
+        //Asserting by SIZEs
+        assertEquals(productsAfter.size(), productsBefore.size());
+        //Asserting by COLLECTIONs
+        productsBefore.remove(editedProduct);
+        productsBefore.add(productData);
+        assertEquals(productsAfter, productsBefore);
+    }
 }

@@ -20,13 +20,7 @@ public class AdminProductPage extends PageBase {
     public void createProduct(AdminProductData productData) {
         click(By.xpath("//a[contains(@href, 'catalog/product/add')]"));
         wait.until(visibilityOfElementLocated(By.xpath("//h3[@class = 'panel-title']")));
-        input(By.xpath("//input[@id = 'input-name1']"), productData.getName());
-        input(By.xpath("//input[@id = 'input-meta-title1']"), productData.getMetaTagTitle());
-        if (productData.getModel() != null && productData.getDateAvailable() > 0) {
-            openProductTab(By.xpath("//a[@href = '#tab-data']"));
-            input(By.xpath("//input[@id = 'input-model']"), productData.getModel());
-            selectDate(By.xpath("//div[@class = 'input-group date']//button"), productData.getDateAvailable());
-        }
+        fillForm(productData);
         click(By.xpath("//button[@data-original-title = 'Save']"));
         wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
     }
@@ -35,6 +29,14 @@ public class AdminProductPage extends PageBase {
         selectProduct(productData.getId());
         click(By.xpath("//button[@data-original-title = 'Delete']"));
         wd.switchTo().alert().accept();
+        wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
+    }
+
+    public void editProduct(AdminProductData productData) {
+        openEditPage(productData.getId());
+        wait.until(visibilityOfElementLocated(By.xpath("//h3[@class = 'panel-title']")));
+        fillForm(productData);
+        click(By.xpath("//button[@data-original-title = 'Save']"));
         wait.until(visibilityOfElementLocated(By.xpath("//div[contains(@class, 'alert-success')]")));
     }
 
@@ -52,6 +54,20 @@ public class AdminProductPage extends PageBase {
         }
     }
 
+    public void openEditPage(int productId) {
+        if (areElementsPresent(By.xpath("//a[text() = '|<']")))
+            click(By.xpath("//a[text() = '|<']"));
+        for (int i = 1; i <= getPagination(); i++) {
+            if (areElementsPresent(By.xpath("//a[@data-original-title = 'Edit' and contains(@href, 'id=" + productId + "')]"))) {
+                click(By.xpath("//a[@data-original-title = 'Edit' and contains(@href, 'id=" + productId + "')]"));
+                break;
+            } else {
+                if (areElementsPresent(By.xpath("//a[text() = '>']")))
+                    click(By.xpath("//a[text() = '>']"));
+            }
+        }
+    }
+
     public void openProductTab(By locator) {
         click(locator);
         wait.until(attributeContains(locator, "aria-expanded", "true"));
@@ -60,6 +76,16 @@ public class AdminProductPage extends PageBase {
     public int getPagination() {
         String text = wd.findElement(By.xpath("//div[@class = 'row']/div[contains(@class, 'text-right')]")).getText();
         return Integer.parseInt(text.substring(text.length() - 9).replaceAll("[() a-zA-Z]", ""));
+    }
+
+    public void fillForm(AdminProductData productData) {
+        input(By.xpath("//input[@id = 'input-name1']"), productData.getName());
+        input(By.xpath("//input[@id = 'input-meta-title1']"), productData.getMetaTagTitle());
+        if (productData.getModel() != null && productData.getDateAvailable() > 0) {
+            openProductTab(By.xpath("//a[@href = '#tab-data']"));
+            input(By.xpath("//input[@id = 'input-model']"), productData.getModel());
+            selectDate(By.xpath("//div[@class = 'input-group date']//button"), productData.getDateAvailable());
+        }
     }
 
     public Set<AdminProductData> getProducts() {
