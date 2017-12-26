@@ -1,6 +1,7 @@
 package com.opencart.tests;
 
 import com.opencart.app.Application;
+import org.apache.commons.mail.EmailException;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import java.io.IOException;
@@ -14,7 +15,7 @@ public class TestBase {
     }
 
     @AfterSuite
-    public void stop() {
+    public void stop() throws IOException, EmailException {
         app.tearDown();
     }
 }

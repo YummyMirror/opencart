@@ -17,6 +17,9 @@ dependencies {
 
     //Including Gson library
     compile 'com.google.code.gson:gson:2.8.2'
+
+    //Including Commons Email
+    compile 'org.apache.commons:commons-email:1.5'
 }
 
 test {

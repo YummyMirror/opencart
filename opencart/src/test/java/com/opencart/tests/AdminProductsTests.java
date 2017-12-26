@@ -104,11 +104,11 @@ public class AdminProductsTests extends TestBase{
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
-        assertEquals(productsAfter.size(), productsBefore.size());
+        assertEquals(productsAfter.size(), productsBefore.size(), "Size of collections aren't equal!");
         //Asserting by COLLECTIONs
         productsBefore.remove(editedProduct);
         productsBefore.add(productData);
-        assertEquals(productsAfter, productsBefore);
+        assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
     @Test(enabled = true, priority = 2)
@@ -118,7 +118,7 @@ public class AdminProductsTests extends TestBase{
         AdminProductData insideData = app.getAdminProductPage().getInsideData(outsideData);
 
         //Asserting by both Name and Model
-        assertEquals(insideData.getName(), outsideData.getName());
-        assertEquals(insideData.getModel(), outsideData.getModel());
+        assertEquals(insideData.getName(), outsideData.getName(), "Names aren't equal!");
+        assertEquals(insideData.getModel(), outsideData.getModel(), "Models aren't equal!");
     }
 }
