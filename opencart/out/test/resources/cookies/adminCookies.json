@@ -1,0 +1,28 @@
+[
+  {
+    "name": "OCSESSID",
+    "value": "5e0ee502433a1fd32d0de7e875",
+    "path": "/",
+    "domain": "localhost",
+    "isSecure": false,
+    "isHttpOnly": false
+  },
+  {
+    "name": "language",
+    "value": "en-gb",
+    "path": "/",
+    "domain": "localhost",
+    "expiry": "Jan 26, 2018 9:44:57 PM",
+    "isSecure": false,
+    "isHttpOnly": false
+  },
+  {
+    "name": "currency",
+    "value": "USD",
+    "path": "/",
+    "domain": "localhost",
+    "expiry": "Jan 26, 2018 9:44:57 PM",
+    "isSecure": false,
+    "isHttpOnly": false
+  }
+]

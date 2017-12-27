@@ -57,7 +57,7 @@ public class AdminProductsTests extends TestBase{
     }
 
     @BeforeMethod
-    public void precondition() {
+    public void precondition() throws IOException {
         if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
             app.getAdminProductPage().openAdminSideAndLogin();
             if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/product/add')]"))) {

@@ -2,15 +2,14 @@ package com.opencart.pages;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.lang.reflect.Type;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Set;
@@ -193,6 +192,30 @@ public class PageBase {
             writer.write(json);
             writer.flush();
             writer.close();
+        }
+    }
+
+    public Set<Cookie> getCookiesFromFile() throws IOException {
+        File file = new File(fileWithCookies);
+        FileReader reader = new FileReader(file);
+        BufferedReader buffReader = new BufferedReader(reader);
+        String line = buffReader.readLine();
+        String json = "";
+        while (line != null) {
+            json += line;
+            line = buffReader.readLine();
+        }
+        Gson gson = new Gson();
+        Type colType = new TypeToken<Set<Cookie>>(){}.getType();
+        buffReader.close();
+        reader.close();
+        return gson.fromJson(json, colType);
+    }
+
+    public void addCookies() throws IOException {
+        Set<Cookie> cookies = getCookiesFromFile();
+        for (Cookie cookie : cookies) {
+            wd.manage().addCookie(cookie);
         }
     }
 }
