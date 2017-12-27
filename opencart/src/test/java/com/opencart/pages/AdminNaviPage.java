@@ -15,7 +15,7 @@ public class AdminNaviPage extends PageBase {
     }
 
     public String getAdminDashboardTitle() {
-        return wd.findElement(By.xpath("//h1[text() = 'Dashboard']")).getText();
+        return wait.until(visibilityOfElementLocated(By.xpath("//h1[text() = 'Dashboard']"))).getText();
     }
 
     public void openMenuItem(String itemName, String subItemName, String subSubItemName) {

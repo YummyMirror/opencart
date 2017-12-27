@@ -1,3 +1,10 @@
 Statuses of executed Test cases: 
 
-Passed TC: createProductTest (priority - 0)Passed TC: createProductTest (priority - 0)Passed TC: deleteProductTest (priority - 1)Passed TC: editProductTest (priority - 2)Passed TC: editProductTest (priority - 2)Passed TC: createProductTest (priority - 0)Passed TC: compareOutsideVsInsideData (priority - 2)Passed TC: editProductTest (priority - 2)
+Passed TC: createProductTest (priority - 0)
+Passed TC: createProductTest (priority - 0)
+Passed TC: editProductTest (priority - 2)
+Passed TC: editProductTest (priority - 2)
+Passed TC: editProductTest (priority - 2)
+Passed TC: createProductTest (priority - 0)
+Passed TC: deleteProductTest (priority - 1)
+Passed TC: compareOutsideVsInsideData (priority - 2)

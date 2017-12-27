@@ -76,7 +76,7 @@ public class Application {
         if (wd != null)
             wd = null;
         result = Reporter.getCurrentTestResult();
-        sendEmailWithStatuses(result);
+        //sendEmailWithStatuses(result);
     }
 
     //Getters of delegates

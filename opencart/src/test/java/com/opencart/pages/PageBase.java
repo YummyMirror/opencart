@@ -1,13 +1,16 @@
 package com.opencart.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Set;
@@ -18,6 +21,7 @@ public class PageBase {
     protected WebDriverWait wait;
     protected Actions actions;
     protected JavascriptExecutor js;
+    protected String fileWithCookies = "src/test/resources/cookies/adminCookies.json";
 
     //Constructor
     public PageBase(WebDriver wd, WebDriverWait wait, Actions actions) {
@@ -172,5 +176,23 @@ public class PageBase {
 
     public Boolean areElementsPresent(By locator) {
         return wd.findElements(locator).size() > 0;
+    }
+
+    public Set<Cookie> getCookies() {
+        return wd.manage().getCookies();
+    }
+
+    public void saveCookies(Set<Cookie> cookies) throws IOException {
+        if (cookies.size() > 0) {
+            File file = new File(fileWithCookies);
+            if (file.exists())
+                file.delete();
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
+            String json = gson.toJson(cookies);
+            FileWriter writer = new FileWriter(file);
+            writer.write(json);
+            writer.flush();
+            writer.close();
+        }
     }
 }
