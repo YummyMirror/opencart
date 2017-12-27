@@ -5,6 +5,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -13,6 +15,8 @@ import java.lang.reflect.Type;
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class PageBase {
@@ -217,5 +221,13 @@ public class PageBase {
         for (Cookie cookie : cookies) {
             wd.manage().addCookie(cookie);
         }
+    }
+
+    public List<LogEntry> getAllBrowserLogs() {
+        return wd.manage().logs().get(LogType.BROWSER).getAll();
+    }
+
+    public List<LogEntry> getSevereBrowserLogs() {
+        return getAllBrowserLogs().stream().filter(l -> l.getLevel().toString().equals("SEVERE")).collect(Collectors.toList());
     }
 }

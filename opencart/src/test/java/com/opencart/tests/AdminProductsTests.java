@@ -71,6 +71,8 @@ public class AdminProductsTests extends TestBase{
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
+        //Asserting by Browser's logs
+        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
@@ -86,6 +88,8 @@ public class AdminProductsTests extends TestBase{
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData deletedProduct = productsBefore.stream().findAny().get();
         app.getAdminProductPage().deleteProduct(deletedProduct);
+        //Asserting by Browser's logs
+        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
@@ -101,6 +105,8 @@ public class AdminProductsTests extends TestBase{
         AdminProductData editedProduct = productsBefore.stream().findAny().get();
         productData.setId(editedProduct.getId());
         app.getAdminProductPage().editProduct(productData);
+        //Asserting by Browser's logs
+        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
