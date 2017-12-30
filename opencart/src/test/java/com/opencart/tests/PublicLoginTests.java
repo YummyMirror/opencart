@@ -2,6 +2,7 @@ package com.opencart.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.PublicLoginData;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
@@ -60,7 +61,7 @@ public class PublicLoginTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @Test(enabled = true, dataProvider = "validLoginDataJson", priority = 1)
+    @Test(enabled = true, dataProvider = "validLoginDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void loginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();
@@ -69,7 +70,7 @@ public class PublicLoginTests extends TestBase {
         assertEquals(app.getPublicLoginPage().getMyAccountTitle(), "My Account", "User isn't logged in!");
     }
 
-    @Test(enabled = true, dataProvider = "invalidLoginDataJson", priority = 2)
+    @Test(enabled = true, dataProvider = "invalidLoginDataJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void invalidLoginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();

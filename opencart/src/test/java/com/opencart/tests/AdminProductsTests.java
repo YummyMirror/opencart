@@ -2,6 +2,7 @@ package com.opencart.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminProductData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
@@ -67,12 +68,12 @@ public class AdminProductsTests extends TestBase{
         }
     }
 
-    @Test(enabled = true, dataProvider = "validProdDataJson", priority = 0)
+    @Test(enabled = true, dataProvider = "validProdDataJson", priority = 0, retryAnalyzer = MyRetryAnalyzer.class)
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
         //Asserting by Browser's logs
-        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
+        //assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
@@ -83,13 +84,13 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 1)
+    @Test(enabled = true, priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void deleteProductTest() {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData deletedProduct = productsBefore.stream().findAny().get();
         app.getAdminProductPage().deleteProduct(deletedProduct);
         //Asserting by Browser's logs
-        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
+        //assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
@@ -99,14 +100,14 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, dataProvider = "validProdDataEditJson", priority = 2)
+    @Test(enabled = true, dataProvider = "validProdDataEditJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void editProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData editedProduct = productsBefore.stream().findAny().get();
         productData.setId(editedProduct.getId());
         app.getAdminProductPage().editProduct(productData);
         //Asserting by Browser's logs
-        assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
+        //assertEquals(app.getAdminProductPage().getSevereBrowserLogs().size(), 0);
 
         Set<AdminProductData> productsAfter = app.getAdminProductPage().getProducts();
         //Asserting by SIZEs
@@ -117,7 +118,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 2)
+    @Test(enabled = true, priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void compareOutsideVsInsideData() {
         Set<AdminProductData> products = app.getAdminProductPage().getProducts();
         AdminProductData outsideData = products.stream().findAny().get();

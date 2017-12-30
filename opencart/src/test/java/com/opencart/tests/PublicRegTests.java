@@ -2,6 +2,7 @@ package com.opencart.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.PublicRegData;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
@@ -88,7 +89,7 @@ public class PublicRegTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @Test(enabled = true, dataProvider = "validRegDataJson", priority = 1)
+    @Test(enabled = true, dataProvider = "validRegDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void registrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickRegister();
@@ -97,7 +98,7 @@ public class PublicRegTests extends TestBase {
         assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success", "User isn't registered!");
     }
 
-    @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2)
+    @Test(enabled = true, dataProvider = "invalidRegDataJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void invalidRegistrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickRegister();

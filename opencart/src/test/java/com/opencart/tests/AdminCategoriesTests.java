@@ -2,6 +2,7 @@ package com.opencart.tests;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminCategoryData;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.DataProvider;
@@ -35,7 +36,7 @@ public class AdminCategoriesTests extends TestBase {
         return list.stream().map(l -> new Object[] {l}).iterator();
     }
 
-    @Test(enabled = true, dataProvider = "validCatDataJson", priority = 1)
+    @Test(enabled = true, dataProvider = "validCatDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
         //Public side
         List<WebElement> listMenuItemsBefore = app.getPublicNaviPage().getListMenuItems();
