@@ -16,7 +16,7 @@ public class PublicNaviPage extends PageBase {
 
     public void clickMyAccount() {
         WebElement dropDown = wait.until(elementToBeClickable(By.xpath("//a[@title = 'My Account']")));
-        if (dropDown.getAttribute("aria-expanded") == null || dropDown.getAttribute("aria-expanded").equals("false"))
+        if (dropDown.getAttribute("aria-expanded") == null)
             dropDown.click();
     }
 

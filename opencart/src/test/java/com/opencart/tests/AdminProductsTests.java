@@ -59,12 +59,11 @@ public class AdminProductsTests extends TestBase{
 
     @BeforeMethod
     public void precondition() throws IOException {
-        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']")))
             app.getAdminProductPage().openAdminSideAndLogin();
-            if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/product/add')]"))) {
-                app.getAdminNaviPage().openMenuItem("Catalog", "Products", "");
-                assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Products", "Products menu item isn't opened!");
-            }
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/product/add')]"))) {
+            app.getAdminNaviPage().openMenuItem("Catalog", "Products", "");
+            assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Products", "Products menu item isn't opened!");
         }
     }
 
@@ -127,7 +126,5 @@ public class AdminProductsTests extends TestBase{
         //Asserting by both Name and Model
         assertEquals(insideData.getName(), outsideData.getName(), "Names aren't equal!");
         assertEquals(insideData.getModel(), outsideData.getModel(), "Models aren't equal!");
-
-        //TODO Make lazy actions for RetryAnalyzer !!!!!
     }
 }

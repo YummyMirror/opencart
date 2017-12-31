@@ -35,13 +35,4 @@ public class PublicRegPage extends PageBase {
     public String getRegisterLinkTitle() {
         return wait.until(visibilityOfElementLocated(By.xpath("//ul[@class = 'breadcrumb']//a[contains(@href, 'route=account/register')]"))).getText();
     }
-
-    public String randomEmailGeneration() {
-        List<String> letters = Arrays.asList("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
-                                            "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
-        int randomInt = new SecureRandom().nextInt(100);
-        int randomInt2 = new SecureRandom().nextInt(70);
-        int randomLetter = new SecureRandom().nextInt(letters.size() - 1);
-        return letters.get(randomLetter) + randomInt + letters.get(randomLetter) + randomInt2 + "@gmail.com";
-    }
 }

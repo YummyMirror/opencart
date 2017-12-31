@@ -39,22 +39,16 @@ public class AdminCategoriesTests extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']")))
             app.getAdminProductPage().openAdminSideAndLogin();
-            if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/category/add')]"))) {
-                app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
-                assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
-            }
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/category/add')]"))) {
+            app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
+            assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
         }
     }
 
     @Test(enabled = true, dataProvider = "validCatDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
-        //Lazy action for Retry Analyzer
-        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/category/add')]"))) {
-            app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
-            assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
-        }
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();
         app.getAdminCategoryPage().createCategory(categoryData);
 

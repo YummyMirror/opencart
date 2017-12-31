@@ -22,6 +22,9 @@
     <SUITE FILE_PATH="coverage/opencart$AdminCategoriesTests_createCategories.coverage" NAME="AdminCategoriesTests.createCategories Coverage Results" MODIFIED="1513608277484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.opencart.tests.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/opencart$AdminCategoriesTests_createMainCategories.coverage" NAME="AdminCategoriesTests.createMainCategories Coverage Results" MODIFIED="1514752534496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.opencart.tests.*</FILTER>
+    </SUITE>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -66,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PageBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PageBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="127" column="37" lean-forward="false" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
+            <state relative-caret-position="374">
+              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
               <folding>
                 <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
                 <element signature="method#check#0;class#PageBase#0" expanded="false" />
@@ -90,78 +93,6 @@
                 <element signature="method#getCookiesFromFile#0;class#PageBase#0" expanded="false" />
                 <element signature="method#addCookies#0;class#PageBase#0" expanded="false" />
                 <element signature="method#getSevereBrowserLogs#0;class#PageBase#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminProductsTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-              <folding>
-                <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="method#validProdDataEditJson#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="e#3160#3189#0" expanded="false" />
-                <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="e#4147#4176#0" expanded="false" />
-                <element signature="method#editProductTest#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="e#5128#5157#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminCookieSavingTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicRegTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="100" column="114" lean-forward="false" selection-start-line="100" selection-start-column="114" selection-end-line="100" selection-end-column="114" />
-              <folding>
-                <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
-                <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-                <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-                <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PublicLoginTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="72" column="116" lean-forward="false" selection-start-line="72" selection-start-column="116" selection-end-line="72" selection-end-column="116" />
-              <folding>
-                <element signature="method#validLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
-                <element signature="method#invalidLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
-                <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminCategoriesTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="19" column="33" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="method#validCatDataJson#0;class#AdminCategoriesTests#0" expanded="false" />
-                <element signature="method#precondition#0;class#AdminCategoriesTests#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -544,13 +475,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/registration.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.csv" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PubLoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidLoginData.json" />
         <option value="$PROJECT_DIR$/src/test/resources/log4testng.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Registration.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicPageBase.java" />
@@ -558,7 +486,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/AdminCategoryData.java" />
         <option value="$PROJECT_DIR$/src/test/resources/properties/local.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Product.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validProductData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/AdminProductData.java" />
@@ -571,26 +498,31 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminProductPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminNaviPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminCategoryPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validLoginData.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidLoginData.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="414" />
-    <option name="y" value="93" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="230" />
+    <option name="y" value="77" />
     <option name="width" value="1489" />
-    <option name="height" value="824" />
+    <option name="height" value="827" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -694,7 +626,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AdminCategoriesTests.createMainCategories">
+  <component name="RunManager" selected="TestNG.AdminProductsTests">
     <configuration name="AdminCategoriesTests.createMainCategories" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -727,7 +659,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicIndexPageTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminProductsTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.opencart.tests.*" />
@@ -739,7 +671,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.AdminProductsTests" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -759,7 +691,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicIndexPageTests.naviMenuTransitionTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublicLoginTests.invalidLoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.opencart.tests.*" />
@@ -771,8 +703,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
-      <option name="METHOD_NAME" value="naviMenuTransitionTest" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicLoginTests" />
+      <option name="METHOD_NAME" value="invalidLoginTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -791,7 +723,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicIndexPageTests.openAllNaviMenuItemsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublicLoginTests.loginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.opencart.tests.*" />
@@ -803,8 +735,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
-      <option name="METHOD_NAME" value="openAllNaviMenuItemsTest" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicLoginTests" />
+      <option name="METHOD_NAME" value="loginTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -823,7 +755,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicIndexPageTests.openNaviMenuItemTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublicRegTests.invalidRegistrationTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.opencart.tests.*" />
@@ -835,8 +767,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
-      <option name="METHOD_NAME" value="openNaviMenuItemTest" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicRegTests" />
+      <option name="METHOD_NAME" value="invalidRegistrationTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -936,19 +868,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openNaviMenuItemTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.PublicRegTests.invalidRegistrationTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.loginTest" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.invalidLoginTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.AdminProductsTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openNaviMenuItemTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.naviMenuTransitionTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.AdminProductsTests" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.AdminCategoriesTests.createMainCategories" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.PublicRegTests.invalidRegistrationTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.invalidLoginTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.loginTest" />
       </list>
     </recent_temporary>
   </component>
@@ -966,39 +898,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 19h 45m 59s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 33m 22s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 19h 47m 51s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 34m 38s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 19h 53m 59s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 35m 36s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 19h 54m 56s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 39m 58s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 19h 59m 05s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 44m 46s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 20h 04m 12s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 46m 12s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 20h 11m 48s.xml">
+    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 23h 47m 13s.xml">
       <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 20h 12m 42s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
+    <history-entry file="AdminProductsTests - 2018.01.01 at 01h 31m 35s.xml">
+      <configuration name="AdminProductsTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 20h 18m 29s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.31 at 21h 52m 42s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2017.12.31 at 20h 21m 21s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
+    <history-entry file="PublicRegTests_invalidRegistrationTest - 2017.12.31 at 21h 54m 17s.xml">
+      <configuration name="PublicRegTests.invalidRegistrationTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1010,8 +942,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27444443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27555555" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2510661" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1028,7 +961,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1037,18 +969,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="173" />
+      <option name="time" value="180" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/3.7.1/74a46d0014b6110d4ff012cb1247fec72fc2768d/selenium-api-3.7.1-sources.jar!/org/openqa/selenium/WebDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1067,13 +992,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="42" lean-forward="true" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validLoginData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1116,30 +1034,6 @@
         <state relative-caret-position="102">
           <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="31" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="method#randomEmailGeneration#0;class#PublicRegPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidLoginData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1305,35 +1199,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="100" column="114" lean-forward="false" selection-start-line="100" selection-start-column="114" selection-end-line="100" selection-end-column="114" />
-          <folding>
-            <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
-            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1341,33 +1206,6 @@
           <folding>
             <element signature="e#961#962#0" expanded="true" />
             <element signature="e#1023#1024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="127" column="37" lean-forward="false" selection-start-line="127" selection-start-column="37" selection-end-line="127" selection-end-column="37" />
-          <folding>
-            <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
-            <element signature="method#check#0;class#PageBase#0" expanded="false" />
-            <element signature="method#input#0;class#PageBase#0" expanded="false" />
-            <element signature="method#inputWithHints#0;class#PageBase#0" expanded="false" />
-            <element signature="method#textArea#0;class#PageBase#0" expanded="false" />
-            <element signature="method#radio#0;class#PageBase#0" expanded="false" />
-            <element signature="method#select#0;class#PageBase#0" expanded="false" />
-            <element signature="method#selectDate#0;class#PageBase#0" expanded="false" />
-            <element signature="method#openNewWindow#0;class#PageBase#0" expanded="false" />
-            <element signature="method#closeCurrentWindow#0;class#PageBase#0" expanded="false" />
-            <element signature="method#loginToAdminSide#0;class#PageBase#0" expanded="false" />
-            <element signature="method#waitNewWindow#0;class#PageBase#0" expanded="false" />
-            <element signature="method#changePhoto#0;class#PageBase#0" expanded="false" />
-            <element signature="method#openAdminSideAndLogin#0;class#PageBase#0" expanded="false" />
-            <element signature="method#saveCookies#0;class#PageBase#0" expanded="false" />
-            <element signature="method#getCookiesFromFile#0;class#PageBase#0" expanded="false" />
-            <element signature="method#addCookies#0;class#PageBase#0" expanded="false" />
-            <element signature="method#getSevereBrowserLogs#0;class#PageBase#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1380,10 +1218,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminNaviPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="89" lean-forward="false" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding>
+            <element signature="method#getAdminDashboardTitle#0;class#AdminNaviPage#0" expanded="false" />
+            <element signature="method#openMenuItem#0;class#AdminNaviPage#0" expanded="false" />
+            <element signature="method#getMenuItems#0;class#AdminNaviPage#0" expanded="false" />
+            <element signature="method#getMenuItemHeaderTitle#0;class#AdminNaviPage#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="15" lean-forward="false" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validLoginData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="272">
+          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
             <element signature="method#clickMyAccount#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#clickRegister#0;class#PublicNaviPage#0" expanded="false" />
@@ -1397,6 +1288,33 @@
             <element signature="method#openAllNaviMenuItems#0;class#PublicNaviPage#0" expanded="false" />
             <element signature="method#getNaviMenuItemTitle#0;class#PublicNaviPage#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="74" column="49" lean-forward="false" selection-start-line="74" selection-start-column="49" selection-end-line="74" selection-end-column="49" />
+          <folding>
+            <element signature="method#validLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
+            <element signature="method#invalidLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidLoginData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1417,56 +1335,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="72" column="116" lean-forward="false" selection-start-line="72" selection-start-column="116" selection-end-line="72" selection-end-column="116" />
-          <folding>
-            <element signature="method#validLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
-            <element signature="method#invalidLoginDataJson#0;class#PublicLoginTests#0" expanded="false" />
-            <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
-          <folding>
-            <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="method#validProdDataEditJson#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="e#3160#3189#0" expanded="false" />
-            <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="e#4147#4176#0" expanded="false" />
-            <element signature="method#editProductTest#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="e#5128#5157#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="670" column="0" lean-forward="false" selection-start-line="670" selection-start-column="0" selection-end-line="670" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="22" lean-forward="false" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="476">
+          <caret line="102" column="49" lean-forward="false" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+          <folding>
+            <element signature="method#validRegDataCsv#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="method#validRegDataJson#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="method#invalidRegDataJson#0;class#PublicRegTests#0" expanded="false" />
+            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminCategoryPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="136">
+          <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
             <element signature="method#getCategoryAmount#0;class#AdminCategoryPage#0" expanded="false" />
             <element signature="method#openAddNewCategoryPage#0;class#AdminCategoryPage#0" expanded="false" />
@@ -1476,15 +1369,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminNaviPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="89" lean-forward="false" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="31" />
           <folding>
-            <element signature="method#getAdminDashboardTitle#0;class#AdminNaviPage#0" expanded="false" />
-            <element signature="method#openMenuItem#0;class#AdminNaviPage#0" expanded="false" />
-            <element signature="method#getMenuItems#0;class#AdminNaviPage#0" expanded="false" />
-            <element signature="method#getMenuItemHeaderTitle#0;class#AdminNaviPage#0" expanded="false" />
+            <element signature="method#validProdDataJson#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="method#validProdDataEditJson#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="e#3132#3161#0" expanded="false" />
+            <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="e#4119#4148#0" expanded="false" />
+            <element signature="method#editProductTest#0;class#AdminProductsTests#0" expanded="false" />
+            <element signature="e#5100#5129#0" expanded="false" />
+            <element signature="method#compareOutsideVsInsideData#0;class#AdminProductsTests#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1496,6 +1403,33 @@
           <folding>
             <element signature="method#validCatDataJson#0;class#AdminCategoriesTests#0" expanded="false" />
             <element signature="method#precondition#0;class#AdminCategoriesTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+          <folding>
+            <element signature="method#PageBase#0;class#PageBase#0" expanded="false" />
+            <element signature="method#check#0;class#PageBase#0" expanded="false" />
+            <element signature="method#input#0;class#PageBase#0" expanded="false" />
+            <element signature="method#inputWithHints#0;class#PageBase#0" expanded="false" />
+            <element signature="method#textArea#0;class#PageBase#0" expanded="false" />
+            <element signature="method#radio#0;class#PageBase#0" expanded="false" />
+            <element signature="method#select#0;class#PageBase#0" expanded="false" />
+            <element signature="method#selectDate#0;class#PageBase#0" expanded="false" />
+            <element signature="method#openNewWindow#0;class#PageBase#0" expanded="false" />
+            <element signature="method#closeCurrentWindow#0;class#PageBase#0" expanded="false" />
+            <element signature="method#loginToAdminSide#0;class#PageBase#0" expanded="false" />
+            <element signature="method#waitNewWindow#0;class#PageBase#0" expanded="false" />
+            <element signature="method#changePhoto#0;class#PageBase#0" expanded="false" />
+            <element signature="method#openAdminSideAndLogin#0;class#PageBase#0" expanded="false" />
+            <element signature="method#saveCookies#0;class#PageBase#0" expanded="false" />
+            <element signature="method#getCookiesFromFile#0;class#PageBase#0" expanded="false" />
+            <element signature="method#addCookies#0;class#PageBase#0" expanded="false" />
+            <element signature="method#getSevereBrowserLogs#0;class#PageBase#0" expanded="false" />
           </folding>
         </state>
       </provider>
