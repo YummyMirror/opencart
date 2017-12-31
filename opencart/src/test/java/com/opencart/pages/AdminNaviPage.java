@@ -22,14 +22,14 @@ public class AdminNaviPage extends PageBase {
         for (int i = 0; i < getMenuItems().size(); i++) {
             List<WebElement> menuItems = getMenuItems();
             if (itemName.equals(menuItems.get(i).getText().replace(".", ""))) {
-                if (menuItems.get(i).getAttribute("aria-expanded") == null || menuItems.get(i).getAttribute("aria-expanded").equals("false"))
+                if (menuItems.get(i).getAttribute("class").equals("parent collapsed"))
                     menuItems.get(i).click();
 
                 List<WebElement> subItems = getSubItems(getMenuItems().get(i));
                 for (int j = 0; j < subItems.size(); j++) {
                     List<WebElement> subItems2 = getSubItems(getMenuItems().get(i));
                     if (subItemName.equals(subItems2.get(j).getText())) {
-                        if (subItems2.get(j).getAttribute("aria-expanded") == null || subItems2.get(j).getAttribute("aria-expanded").equals("false"))
+                        if (subItems2.get(j).getAttribute("class").contains("collapsed") || subItems2.get(j).getAttribute("href").contains("token"))
                             subItems2.get(j).click();
 
                         List<WebElement> subMenuItems = getSubItems(getMenuItems().get(i));

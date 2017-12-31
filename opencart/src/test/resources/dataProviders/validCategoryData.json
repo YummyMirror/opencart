@@ -10,7 +10,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "abc11",
+    "seoKeywords": "a1",
     "designLayout": "Account"
   },
   {
@@ -24,7 +24,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "abc22",
+    "seoKeywords": "a2",
     "designLayout": "Account"
   },
   {
@@ -38,7 +38,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "abc33",
+    "seoKeywords": "a3",
     "designLayout": "Account"
   },
   {
@@ -52,7 +52,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "abc44",
+    "seoKeywords": "a4",
     "designLayout": "Account"
   },
   {
@@ -66,7 +66,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "abc55",
+    "seoKeywords": "a5",
     "designLayout": "Account"
   }
 ]

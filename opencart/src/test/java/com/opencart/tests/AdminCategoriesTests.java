@@ -4,7 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminCategoryData;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.BufferedReader;
@@ -36,25 +37,28 @@ public class AdminCategoriesTests extends TestBase {
         return list.stream().map(l -> new Object[] {l}).iterator();
     }
 
+    @BeforeMethod
+    public void precondition() {
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']"))) {
+            app.getAdminProductPage().openAdminSideAndLogin();
+            if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/category/add')]"))) {
+                app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
+                assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
+            }
+        }
+    }
+
     @Test(enabled = true, dataProvider = "validCatDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
-        //Public side
-        List<WebElement> listMenuItemsBefore = app.getPublicNaviPage().getListMenuItems();
-        //Admin side
-        app.getAdminCategoryPage().openAdminSideAndLogin();
-
-        app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
-        assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
-
+        //Lazy action for Retry Analyzer
+        if (!app.getAdminProductPage().areElementsPresent(By.xpath("//a[contains(@href, 'catalog/category/add')]"))) {
+            app.getAdminNaviPage().openMenuItem("Catalog", "Categories", "");
+            assertEquals(app.getAdminNaviPage().getMenuItemHeaderTitle(), "Categories", "Categories menu item isn't opened!");
+        }
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();
         app.getAdminCategoryPage().createCategory(categoryData);
 
         int categoryAmountAfter = app.getAdminCategoryPage().getCategoryAmount();
         assertEquals(categoryAmountAfter, categoryAmountBefore + 1, "New category isn't created!");
-        //Public side
-        app.getAdminNaviPage().closeCurrentWindow();
-        app.getPublicNaviPage().refreshPage();
-        List<WebElement> listMenuItemsAfter = app.getPublicNaviPage().getListMenuItems();
-        assertEquals(listMenuItemsAfter.size(), listMenuItemsBefore.size() + 1, "New category isn't presented at Public side!");
     }
 }
