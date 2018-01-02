@@ -1,10 +1,16 @@
 package com.opencart.models;
 
+import com.google.gson.annotations.Expose;
+
 public class AdminReviewData {
     private int id = Integer.MAX_VALUE;
+    @Expose
     private String author;
+    @Expose
     private String product;
+    @Expose
     private String text;
+    @Expose
     private int rating;
     private int date;
     private Boolean status;
