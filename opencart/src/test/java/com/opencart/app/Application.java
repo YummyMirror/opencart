@@ -42,6 +42,7 @@ public class Application {
     private AdminNaviPage adminNaviPage;
     private AdminCategoryPage adminCategoryPage;
     private AdminProductPage adminProductPage;
+    private AdminReviewPage adminReviewPage;
     private ITestResult result;
     private String fileWithResults = "src/test/resources/results/report.csv";
 
@@ -67,6 +68,7 @@ public class Application {
         adminNaviPage = new AdminNaviPage(wd, wait, actions);
         adminCategoryPage = new AdminCategoryPage(wd, wait, actions);
         adminProductPage = new AdminProductPage(wd, wait, actions);
+        adminReviewPage = new AdminReviewPage(wd, wait, actions);
 
         System.out.println(((HasCapabilities) wd).getCapabilities());
     }
@@ -102,6 +104,10 @@ public class Application {
 
     public AdminProductPage getAdminProductPage() {
         return adminProductPage;
+    }
+
+    public AdminReviewPage getAdminReviewPage() {
+        return adminReviewPage;
     }
 
     public WebDriver getWebDriver(String browser) {

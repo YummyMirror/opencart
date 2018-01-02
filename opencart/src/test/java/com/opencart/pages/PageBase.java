@@ -59,6 +59,7 @@ public class PageBase {
         if (value != null) {
             String currentValue = wd.findElement(locator).getAttribute("value");
             if (!value.equals(currentValue)) {
+                wd.findElement(locator).click();
                 wd.findElement(locator).sendKeys(value);
                 List<WebElement> hints = wait.until(visibilityOfAllElementsLocatedBy(hintsLocator));
                 if (hints.size() > 1)
@@ -115,6 +116,14 @@ public class PageBase {
                     break;
                 }
             }
+        }
+    }
+
+    public void radioGroup(By locator, int value) {
+        List<WebElement> radios = wd.findElements(locator);
+        for (WebElement radio : radios) {
+            if (value == Integer.parseInt(radio.getAttribute("value")))
+                radio.click();
         }
     }
 
