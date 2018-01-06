@@ -1,62 +1,16 @@
 package com.opencart.tests;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminProductData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 import static org.testng.Assert.*;
 
 public class AdminProductsTests extends TestBase{
-    @DataProvider
-    public Iterator<Object[]> validProdDataJson() throws IOException {
-        File file = new File("src/test/resources/dataProviders/validProductData.json");
-        FileReader reader = new FileReader(file);
-        BufferedReader buffReader = new BufferedReader(reader);
-        String line = buffReader.readLine();
-        String json = "";
-        while (line != null) {
-            json += line;
-            line = buffReader.readLine();
-        }
-        Gson gson = new Gson();
-        Type collectionType = new TypeToken<List<AdminProductData>>(){}.getType();
-        List<AdminProductData> list = gson.fromJson(json, collectionType);
-        reader.close();
-        buffReader.close();
-        return list.stream().map(l -> new Object[] {l}).iterator();
-    }
-
-    @DataProvider
-    public Iterator<Object[]> validProdDataEditJson() throws IOException {
-        File file = new File("src/test/resources/dataProviders/validProductDataEdit.json");
-        FileReader reader = new FileReader(file);
-        BufferedReader buffReader = new BufferedReader(reader);
-        String line = buffReader.readLine();
-        String json = "";
-        while (line != null) {
-            json += line;
-            line = buffReader.readLine();
-        }
-        Gson gson = new Gson();
-        Type collectionType = new TypeToken<List<AdminProductData>>(){}.getType();
-        List<AdminProductData> list = gson.fromJson(json, collectionType);
-        reader.close();
-        buffReader.close();
-        return list.stream().map(l -> new Object[] {l}).iterator();
-    }
-
     @BeforeMethod
     public void precondition() throws IOException {
         if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']")))
@@ -67,7 +21,7 @@ public class AdminProductsTests extends TestBase{
         }
     }
 
-    @Test(enabled = true, dataProvider = "validProdDataJson", priority = 0, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validProdDataJson", priority = 0, retryAnalyzer = MyRetryAnalyzer.class)
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
@@ -83,7 +37,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void deleteProductTest() {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData deletedProduct = productsBefore.stream().findAny().get();
@@ -99,7 +53,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, dataProvider = "validProdDataEditJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validProdDataEditJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void editProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData editedProduct = productsBefore.stream().findAny().get();
@@ -117,7 +71,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void compareOutsideVsInsideData() {
         Set<AdminProductData> products = app.getAdminProductPage().getProducts();
         AdminProductData outsideData = products.stream().findAny().get();

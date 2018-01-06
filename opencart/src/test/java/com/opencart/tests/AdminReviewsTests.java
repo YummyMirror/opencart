@@ -1,40 +1,15 @@
 package com.opencart.tests;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminReviewData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import java.io.*;
-import java.lang.reflect.Type;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 import static org.testng.Assert.*;
 
 public class AdminReviewsTests extends TestBase {
-    @DataProvider
-    public Iterator<Object[]> validReviewDataJson() throws IOException {
-        File file = new File("src/test/resources/dataProviders/validReviewData.json");
-        FileReader reader = new FileReader(file);
-        BufferedReader buffReader = new BufferedReader(reader);
-        String line = buffReader.readLine();
-        String json = "";
-        while (line != null) {
-            json += line;
-            line = buffReader.readLine();
-        }
-        Gson gson = new Gson();
-        Type colType = new TypeToken<List<AdminReviewData>>() { }.getType();
-        List<AdminReviewData> list = gson.fromJson(json, colType);
-        buffReader.close();
-        reader.close();
-        return list.stream().map(r -> new Object[] {r}).iterator();
-    }
-
     @BeforeMethod
     public void precondition() {
         if (!app.getAdminProductPage().areElementsPresent(By.xpath("//img[@title = 'OpenCart']")))
@@ -45,7 +20,7 @@ public class AdminReviewsTests extends TestBase {
         }
     }
 
-    @Test(enabled = true, dataProvider = "validReviewDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validReviewDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createReviewTest(AdminReviewData reviewData) {
         Set<AdminReviewData> reviewsBefore = app.getAdminReviewPage().getReviews();
 
