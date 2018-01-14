@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.log4testng.Logger;
+
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class AdminCategoryPage extends PageBase {

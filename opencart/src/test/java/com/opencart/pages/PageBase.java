@@ -10,6 +10,8 @@ import org.openqa.selenium.logging.LogType;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.log4testng.Logger;
+
 import java.io.*;
 import java.lang.reflect.Type;
 import java.security.SecureRandom;

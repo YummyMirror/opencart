@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.log4testng.Logger;
 import sun.plugin.dom.exception.BrowserNotSupportedException;
 import java.io.File;
 import java.io.FileReader;
@@ -45,6 +46,8 @@ public class Application {
     private AdminReviewPage adminReviewPage;
     private ITestResult result;
     private String fileWithResults = "src/test/resources/results/report.csv";
+    private FileWriter writer = null;
+    private static final Logger LOGGER = Logger.getLogger(Application.class);
 
     //Constructor
     public Application(String browser) {
@@ -70,7 +73,7 @@ public class Application {
         adminProductPage = new AdminProductPage(wd, wait, actions);
         adminReviewPage = new AdminReviewPage(wd, wait, actions);
 
-        System.out.println(((HasCapabilities) wd).getCapabilities());
+        LOGGER.info(((HasCapabilities) wd).getCapabilities());
     }
 
     public void tearDown() throws IOException, EmailException {
@@ -141,24 +144,30 @@ public class Application {
 
     public void sendEmailWithStatuses(ITestResult result) throws IOException, EmailException {
         saveResultsInFile(result);
-        //Create the attachment
-        EmailAttachment attachment = new EmailAttachment();
-        attachment.setPath(fileWithResults);
-        attachment.setDisposition(EmailAttachment.ATTACHMENT);
-        attachment.setDescription("Report statuses");
-        attachment.setName("report.csv");
-        //Create the email message
-        MultiPartEmail email = new MultiPartEmail();
-        email.setHostName("smtp.gmail.com");
-        email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("tester2.exposit@gmail.com", "Expotester256"));
-        email.setSSLOnConnect(true);
-        email.addTo("anatoli.anukevich@exposit.com", "");
-        email.setFrom("tester2.exposit@gmail.com", "Anatoli");
-        email.setSubject("Test Report");
-        email.setMsg("Here is the file with Test Report with statuses of executed Test cases in the attachment section");
-        email.attach(attachment);
-        email.send();
+        try {
+            //Create the attachment
+            EmailAttachment attachment = new EmailAttachment();
+            attachment.setPath(fileWithResults);
+            attachment.setDisposition(EmailAttachment.ATTACHMENT);
+            attachment.setDescription("Report statuses");
+            attachment.setName("report.csv");
+            //Create the email message
+            MultiPartEmail email = new MultiPartEmail();
+            email.setHostName("smtp.gmail.com");
+            email.setSmtpPort(465);
+            email.setAuthenticator(new DefaultAuthenticator("tester2.exposit@gmail.com", "Expotester256"));
+            email.setSSLOnConnect(true);
+            email.addTo("anatoli.anukevich@exposit.com", "");
+            email.setFrom("tester2.exposit@gmail.com", "Anatoli");
+            email.setSubject("Test Report");
+            email.setMsg("Here is the file with Test Report with statuses of executed Test cases in the attachment section");
+            email.attach(attachment);
+            email.send();
+            LOGGER.info("Email is successfully sent");
+        } catch (EmailException e) {
+            e.printStackTrace();
+            LOGGER.error("Email is not sent!");
+        }
     }
 
     public void saveResultsInFile(ITestResult result) throws IOException {
@@ -166,34 +175,47 @@ public class Application {
         Collection<ITestNGMethod> failed = result.getTestContext().getFailedTests().getAllMethods();
         Collection<ITestNGMethod> skipped = result.getTestContext().getSkippedTests().getAllMethods();
         File file = new File(fileWithResults);
-        if (file.exists())
+        if (file.exists() && file.isFile())
             file.delete();
-        FileWriter writer = new FileWriter(file);
-        writer.write("Statuses of executed Test cases: \n\n");
-        passed.forEach(p -> {
-            try {
-                writer.write("Passed TC: " + p.getMethodName() + " (priority - " + p.getPriority() + ")\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        writer.write("\n");
-        failed.forEach(f -> {
-            try {
-                writer.write("Failed TC: " + f.getMethodName() + " (priority - " + f.getPriority() + ")\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        writer.write("\n");
-        skipped.forEach(s -> {
-            try {
-                writer.write("Skipped TC: " + s.getMethodName() + " (priority - " + s.getPriority() + ")\n");
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        writer.flush();
-        writer.close();
+        try {
+            writer = new FileWriter(file);
+            writer.write("Statuses of executed Test cases: \n\n");
+            passed.forEach(p -> {
+                try {
+                    writer.write("Passed TC: " + p.getMethodName() + " (priority - " + p.getPriority() + ")\n");
+                    LOGGER.info("Passed TCs is written");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    LOGGER.error("Passed TCs is not written");
+                }
+            });
+            writer.write("\n");
+            failed.forEach(f -> {
+                try {
+                    writer.write("Failed TC: " + f.getMethodName() + " (priority - " + f.getPriority() + ")\n");
+                    LOGGER.info("Failed TCs is written");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    LOGGER.error("Failed TCs is not written");
+                }
+            });
+            writer.write("\n");
+            skipped.forEach(s -> {
+                try {
+                    writer.write("Skipped TC: " + s.getMethodName() + " (priority - " + s.getPriority() + ")\n");
+                    LOGGER.info("Skipped TCs is written");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    LOGGER.error("Skipped TCs is not written");
+                }
+            });
+            LOGGER.info("Data is successfully saved to the file");
+        } catch (IOException e) {
+            e.printStackTrace();
+            LOGGER.error("Data is not save to the file!");
+        } finally {
+            writer.flush();
+            writer.close();
+        }
     }
 }
