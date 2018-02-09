@@ -50,21 +50,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminProductsTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminProductsTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+            <state relative-caret-position="153">
+              <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="40" />
               <folding>
                 <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
                 <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
                 <element signature="e#1481#1510#0" expanded="false" />
                 <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="e#2468#2497#0" expanded="false" />
+                <element signature="e#2477#2506#0" expanded="false" />
                 <element signature="method#editProductTest#0;class#AdminProductsTests#0" expanded="false" />
-                <element signature="e#3561#3590#0" expanded="false" />
+                <element signature="e#3577#3606#0" expanded="false" />
                 <element signature="method#compareOutsideVsInsideData#0;class#AdminProductsTests#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmokeInterceptor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/SmokeInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="e#419#436#0" expanded="true" />
+                <element signature="e#694#702#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="smoke.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/configFiles/smoke.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,8 +97,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -437,11 +460,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegistrationPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegistrationData.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/registration.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.csv" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicRegData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PubLoginTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/generators/Login.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/PublicLoginData.java" />
@@ -459,15 +477,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TempTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/GetAdminSideCookie.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/GetAdminSideCookieTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryAnalyzer.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminProductPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicRegPage.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validLoginData.json" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidLoginData.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/invalidRegData.json" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminReviewPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/models/AdminReviewData.java" />
@@ -480,14 +493,24 @@
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/app/Application.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/pages/PageBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/annotations/DataSource.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validCategoryData.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/dataProviders/validRegData.json" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminReviewsTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/opencart/dataProviders/AllDataProviders.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/RetryAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/RetryListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminReviewsTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/MethodInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/listeners/SmokeInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/smoke.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java" />
       </list>
     </option>
   </component>
@@ -513,6 +536,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -553,16 +578,7 @@
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="annotations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="opencart" type="462c0819:PsiDirectoryNode" />
-              <item name="dataProviders" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
@@ -573,28 +589,11 @@
               <item name="opencart" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="opencart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="opencart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dataProviders" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -607,6 +606,9 @@
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$/.idea/libraries" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Private\Work\Repositories\opencart\opencart\src\test\resources\configFiles" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.opencart" />
     </key>
@@ -623,7 +625,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.AdminProductsTests.editProductTest">
+  <component name="RunManager" selected="TestNG.F:/Private/Work/Repositories/opencart/opencart/src/test/resources/configFiles/smoke.xml">
     <configuration name="AdminProductsTests.createProductTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -688,22 +690,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="AdminReviewsTests.createReviewTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="F:/Private/Work/Repositories/opencart/opencart/src/test/resources/configFiles/smoke.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="opencart_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.AdminReviewsTests" />
-      <option name="METHOD_NAME" value="createReviewTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/configFiles/smoke.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -720,22 +717,17 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicLoginTests.invalidLoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="F:/Private/Work/Repositories/opencart/opencart/src/test/resources/smoke.xml" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="opencart_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicLoginTests" />
-      <option name="METHOD_NAME" value="invalidLoginTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/smoke.xml" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -752,7 +744,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="PublicLoginTests.loginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PublicIndexPageTests.openAllNaviMenuItemsTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.opencart.tests.*" />
@@ -764,8 +756,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="com.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicLoginTests" />
-      <option name="METHOD_NAME" value="loginTest" />
+      <option name="MAIN_CLASS_NAME" value="com.opencart.tests.PublicIndexPageTests" />
+      <option name="METHOD_NAME" value="openAllNaviMenuItemsTest" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -865,19 +857,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.loginTest" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.invalidLoginTest" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.AdminReviewsTests.createReviewTest" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.editProductTest" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.editProductTest" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.F:/Private/Work/Repositories/opencart/opencart/src/test/resources/smoke.xml" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.F:/Private/Work/Repositories/opencart/opencart/src/test/resources/configFiles/smoke.xml" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.editProductTest" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AdminReviewsTests.createReviewTest" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.invalidLoginTest" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.PublicLoginTests.loginTest" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.F:/Private/Work/Repositories/opencart/opencart/src/test/resources/configFiles/smoke.xml" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.F:/Private/Work/Repositories/opencart/opencart/src/test/resources/smoke.xml" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.PublicIndexPageTests.openAllNaviMenuItemsTest" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.editProductTest" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.AdminProductsTests.createProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -895,20 +887,20 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminCategoriesTests_createMainCategories - 2018.02.09 at 18h 21m 16s.xml">
-      <configuration name="AdminCategoriesTests.createMainCategories" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2018.02.09 at 18h 47m 48s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminProductsTests_createProductTest - 2018.02.09 at 18h 49m 55s.xml">
-      <configuration name="AdminProductsTests.createProductTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminProductsTests_editProductTest - 2018.02.09 at 18h 52m 15s.xml">
-      <configuration name="AdminProductsTests.editProductTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AdminReviewsTests_createReviewTest - 2018.02.09 at 18h 43m 07s.xml">
       <configuration name="AdminReviewsTests.createReviewTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__Private_Work_Repositories_opencart_opencart_src_test_resources_configFiles_smoke_xml - 2018.02.09 at 23h 03m 25s.xml">
+      <configuration name="F:/Private/Work/Repositories/opencart/opencart/src/test/resources/configFiles/smoke.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__Private_Work_Repositories_opencart_opencart_src_test_resources_smoke_xml - 2018.02.09 at 22h 51m 46s.xml">
+      <configuration name="F:/Private/Work/Repositories/opencart/opencart/src/test/resources/smoke.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="F__Private_Work_Repositories_opencart_opencart_src_test_resources_smoke_xml - 2018.02.09 at 23h 00m 56s.xml">
+      <configuration name="F:/Private/Work/Repositories/opencart/opencart/src/test/resources/smoke.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="PublicIndexPageTests_openAllNaviMenuItemsTest - 2018.02.09 at 22h 54m 23s.xml">
+      <configuration name="PublicIndexPageTests.openAllNaviMenuItemsTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="PublicLoginTests_invalidLoginTest - 2018.02.09 at 18h 38m 39s.xml">
       <configuration name="PublicLoginTests.invalidLoginTest" configurationId="TestNG" />
@@ -971,20 +963,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.11/77da7afb24d57b640d9803593a6222c7de12dd4e/testng-6.11-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/AdminProductData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/models/AdminCategoryData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1136,13 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="109" column="41" lean-forward="true" selection-start-line="109" selection-start-column="41" selection-end-line="109" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/AdminCategoryPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1154,21 +1125,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/MyRetryAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,7 +1160,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,38 +1180,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="35" lean-forward="false" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-          <folding>
-            <element signature="method#naviMenuTransitionTest#0;class#PublicIndexPageTests#0" expanded="false" />
-            <element signature="method#openNaviMenuItemTest#0;class#PublicIndexPageTests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/annotations/DataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,17 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="method#precondition#0;class#AdminCategoriesTests#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1282,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,27 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="102" lean-forward="false" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
-          <folding>
-            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1318,17 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminReviewsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="23" column="70" lean-forward="false" selection-start-line="23" selection-start-column="70" selection-end-line="23" selection-end-column="70" />
-          <folding>
-            <element signature="method#precondition#0;class#AdminReviewsTests#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1336,7 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="1" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1344,7 +1226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="23" lean-forward="false" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,36 +1233,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="129" column="5" lean-forward="false" selection-start-line="129" selection-start-column="5" selection-end-line="129" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/RetryListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/RetryAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminReviewsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
-            <element signature="method#regDataCsv#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#713#723#0" expanded="true" />
-            <element signature="method#registrationData#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#2117#2132#0" expanded="true" />
-            <element signature="method#loginData#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#3138#3155#0" expanded="true" />
-            <element signature="method#reviewData#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#4165#4182#0" expanded="true" />
-            <element signature="method#productData#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#5183#5201#0" expanded="true" />
-            <element signature="method#categoryData#0;class#AllDataProviders#0" expanded="false" />
-            <element signature="e#6218#6237#0" expanded="true" />
+            <element signature="method#precondition#0;class#AdminReviewsTests#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicLoginTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="48" lean-forward="false" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
+          <folding>
+            <element signature="method#precondition#0;class#PublicLoginTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicRegTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
+          <folding>
+            <element signature="method#precondition#0;class#PublicRegTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCookieSavingTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminProductsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="26" column="64" lean-forward="false" selection-start-line="26" selection-start-column="64" selection-end-line="26" selection-end-column="64" />
+        <state relative-caret-position="153">
+          <caret line="25" column="40" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="40" />
           <folding>
             <element signature="method#precondition#0;class#AdminProductsTests#0" expanded="false" />
             <element signature="method#createProductTest#0;class#AdminProductsTests#0" expanded="false" />
             <element signature="e#1481#1510#0" expanded="false" />
             <element signature="method#deleteProductTest#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="e#2468#2497#0" expanded="false" />
+            <element signature="e#2477#2506#0" expanded="false" />
             <element signature="method#editProductTest#0;class#AdminProductsTests#0" expanded="false" />
-            <element signature="e#3561#3590#0" expanded="false" />
+            <element signature="e#3577#3606#0" expanded="false" />
             <element signature="method#compareOutsideVsInsideData#0;class#AdminProductsTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/pages/PublicNaviPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="87" column="16" lean-forward="false" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/AdminCategoriesTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="method#precondition#0;class#AdminCategoriesTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/tests/PublicIndexPageTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="method#naviMenuTransitionTest#0;class#PublicIndexPageTests#0" expanded="false" />
+            <element signature="method#openNaviMenuItemTest#0;class#PublicIndexPageTests#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/configFiles/smoke.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/opencart/listeners/SmokeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#419#436#0" expanded="true" />
+            <element signature="e#694#702#0" expanded="true" />
           </folding>
         </state>
       </provider>

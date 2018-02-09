@@ -3,7 +3,7 @@ package com.opencart.listeners;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class MyRetryAnalyzer implements IRetryAnalyzer {
+public class RetryAnalyzer implements IRetryAnalyzer {
     private int i = 0;
     private int max = 1;
 

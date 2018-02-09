@@ -2,7 +2,7 @@ package com.opencart.tests;
 
 import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
-import com.opencart.listeners.MyRetryAnalyzer;
+import com.opencart.listeners.RetryAnalyzer;
 import com.opencart.models.PublicLoginData;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +20,7 @@ public class PublicLoginTests extends TestBase {
     }
 
     @DataSource("src/test/resources/dataProviders/validLoginData.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", retryAnalyzer = RetryAnalyzer.class)
     public void loginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();
@@ -30,7 +30,7 @@ public class PublicLoginTests extends TestBase {
     }
 
     @DataSource("src/test/resources/dataProviders/invalidLoginData.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 2, groups = {"regression"}, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", retryAnalyzer = RetryAnalyzer.class)
     public void invalidLoginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();

@@ -2,7 +2,7 @@ package com.opencart.tests;
 
 import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
-import com.opencart.listeners.MyRetryAnalyzer;
+import com.opencart.listeners.RetryAnalyzer;
 import com.opencart.models.AdminReviewData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +22,7 @@ public class AdminReviewsTests extends TestBase {
     }
 
     @DataSource("src/test/resources/dataProviders/validReviewData.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "reviewData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "reviewData", retryAnalyzer = RetryAnalyzer.class)
     public void createReviewTest(AdminReviewData reviewData) {
         Set<AdminReviewData> reviewsBefore = app.getAdminReviewPage().getReviews();
 

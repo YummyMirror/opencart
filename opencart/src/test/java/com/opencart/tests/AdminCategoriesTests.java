@@ -2,7 +2,7 @@ package com.opencart.tests;
 
 import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
-import com.opencart.listeners.MyRetryAnalyzer;
+import com.opencart.listeners.RetryAnalyzer;
 import com.opencart.models.AdminCategoryData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
@@ -21,7 +21,7 @@ public class AdminCategoriesTests extends TestBase {
     }
 
     @DataSource("src/test/resources/dataProviders/validCategoryData.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "categoryData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "categoryData", retryAnalyzer = RetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();
         app.getAdminCategoryPage().createCategory(categoryData);

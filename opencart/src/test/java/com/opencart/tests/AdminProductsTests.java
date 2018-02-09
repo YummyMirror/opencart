@@ -2,7 +2,7 @@ package com.opencart.tests;
 
 import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
-import com.opencart.listeners.MyRetryAnalyzer;
+import com.opencart.listeners.RetryAnalyzer;
 import com.opencart.models.AdminProductData;
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
@@ -23,7 +23,7 @@ public class AdminProductsTests extends TestBase{
     }
 
     @DataSource("src/test/resources/dataProviders/validProductData.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "productData", priority = 0, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 0, groups = {"smoke"}, dataProviderClass = AllDataProviders.class, dataProvider = "productData", retryAnalyzer = RetryAnalyzer.class)
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         app.getAdminProductPage().createProduct(productData);
@@ -39,7 +39,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 1, groups = {"criticalPath"}, retryAnalyzer = RetryAnalyzer.class)
     public void deleteProductTest() {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData deletedProduct = productsBefore.stream().findAny().get();
@@ -56,7 +56,7 @@ public class AdminProductsTests extends TestBase{
     }
 
     @DataSource("src/test/resources/dataProviders/validProductDataEdit.json")
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "productData", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 2, groups = {"regression"}, dataProviderClass = AllDataProviders.class, dataProvider = "productData", retryAnalyzer = RetryAnalyzer.class)
     public void editProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
         AdminProductData editedProduct = productsBefore.stream().findAny().get();
@@ -74,7 +74,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @Test(enabled = true, priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @Test(priority = 2, groups = {"regression"}, retryAnalyzer = RetryAnalyzer.class)
     public void compareOutsideVsInsideData() {
         Set<AdminProductData> products = app.getAdminProductPage().getProducts();
         AdminProductData outsideData = products.stream().findAny().get();

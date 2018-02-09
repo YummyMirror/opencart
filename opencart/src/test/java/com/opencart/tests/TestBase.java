@@ -1,23 +1,21 @@
 package com.opencart.tests;
 
 import com.opencart.app.Application;
-import com.opencart.listeners.MyRetryListener;
+import com.opencart.listeners.RetryListener;
 import org.apache.commons.mail.EmailException;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Listeners;
+import org.testng.annotations.*;
 import java.io.IOException;
 
-@Listeners(MyRetryListener.class)
+@Listeners(RetryListener.class)
 public class TestBase {
-    protected static Application app = new Application("CHROME");
+    protected Application app = new Application("CHROME");
 
-    @BeforeSuite
+    @BeforeClass
     public void start() throws IOException {
         app.init();
     }
 
-    @AfterSuite
+    @AfterClass
     public void stop() throws IOException, EmailException {
         app.tearDown();
     }

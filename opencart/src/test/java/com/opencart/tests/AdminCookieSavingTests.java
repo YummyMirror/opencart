@@ -7,7 +7,7 @@ import java.util.Set;
 import static org.testng.Assert.*;
 
 public class AdminCookieSavingTests extends TestBase {
-    @Test(enabled = true, priority = 3)
+    @Test(priority = 3, groups = {"regression"})
     public void saveAdminSideCookie() throws IOException {
         app.getAdminNaviPage().openNewWindow("http://localhost/opencart/admin/");
         app.getAdminNaviPage().loginToAdminSide("admin", "admin");
