@@ -1,5 +1,6 @@
 package com.opencart.tests;
 
+import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.PublicLoginData;
@@ -18,7 +19,8 @@ public class PublicLoginTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validLoginDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/validLoginData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void loginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();
@@ -27,7 +29,8 @@ public class PublicLoginTests extends TestBase {
         assertEquals(app.getPublicLoginPage().getMyAccountTitle(), "My Account", "User isn't logged in!");
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "invalidLoginDataJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/invalidLoginData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void invalidLoginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickLogin();

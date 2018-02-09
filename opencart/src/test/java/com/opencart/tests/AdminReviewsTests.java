@@ -1,5 +1,6 @@
 package com.opencart.tests;
 
+import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminReviewData;
@@ -20,7 +21,8 @@ public class AdminReviewsTests extends TestBase {
         }
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validReviewDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/validReviewData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "reviewData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createReviewTest(AdminReviewData reviewData) {
         Set<AdminReviewData> reviewsBefore = app.getAdminReviewPage().getReviews();
 

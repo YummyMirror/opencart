@@ -1,5 +1,6 @@
 package com.opencart.tests;
 
+import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.AdminCategoryData;
@@ -19,7 +20,8 @@ public class AdminCategoriesTests extends TestBase {
         }
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validCatDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/validCategoryData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "categoryData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();
         app.getAdminCategoryPage().createCategory(categoryData);

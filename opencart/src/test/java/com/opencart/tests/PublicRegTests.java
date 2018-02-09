@@ -1,5 +1,6 @@
 package com.opencart.tests;
 
+import com.opencart.annotations.DataSource;
 import com.opencart.dataProviders.AllDataProviders;
 import com.opencart.listeners.MyRetryAnalyzer;
 import com.opencart.models.PublicRegData;
@@ -18,7 +19,8 @@ public class PublicRegTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "validRegDataJson", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/validRegData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "registrationData", priority = 1, retryAnalyzer = MyRetryAnalyzer.class)
     public void registrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickRegister();
@@ -27,7 +29,8 @@ public class PublicRegTests extends TestBase {
         assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success", "User isn't registered!");
     }
 
-    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "invalidRegDataJson", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
+    @DataSource("src/test/resources/dataProviders/invalidRegData.json")
+    @Test(enabled = true, dataProviderClass = AllDataProviders.class, dataProvider = "registrationData", priority = 2, retryAnalyzer = MyRetryAnalyzer.class)
     public void invalidRegistrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();
         app.getPublicNaviPage().clickRegister();
