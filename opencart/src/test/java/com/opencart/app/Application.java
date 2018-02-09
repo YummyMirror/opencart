@@ -35,7 +35,6 @@ public class Application {
     private WebDriverWait wait;
     private Actions actions;
     private JavascriptExecutor js;
-    private String browser;
     private Properties properties;
     private PublicRegPage publicRegPage;
     private PublicNaviPage publicNaviPage;
@@ -49,12 +48,7 @@ public class Application {
     private FileWriter writer = null;
     private static final Logger LOGGER = Logger.getLogger(Application.class);
 
-    //Constructor
-    public Application(String browser) {
-        this.browser = browser;
-    }
-
-    public void init() throws IOException {
+    public void init(String browser) throws IOException {
         initProperties();
         wd = getWebDriver(browser);
         wd.manage().timeouts().implicitlyWait(5, SECONDS);

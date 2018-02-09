@@ -8,11 +8,12 @@ import java.io.IOException;
 
 @Listeners(RetryListener.class)
 public class TestBase {
-    protected Application app = new Application("CHROME");
+    protected Application app = new Application();
 
+    @Parameters("browser")
     @BeforeClass
-    public void start() throws IOException {
-        app.init();
+    public void start(@Optional("CHROME") String browser) throws IOException {
+        app.init(browser);
     }
 
     @AfterClass
