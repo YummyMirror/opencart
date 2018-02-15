@@ -8,5 +8,13 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface DataSource {
+    public enum Format {
+        CSV,
+        JSON,
+        XML,
+        EXCEL
+    }
+
     String value();
+    Format format();
 }

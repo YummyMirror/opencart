@@ -19,7 +19,7 @@ public class PublicLoginTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @DataSource("src/test/resources/dataProviders/validLoginData.json")
+    @DataSource(value = "src/test/resources/dataProviders/validLoginData.json", format = DataSource.Format.JSON)
     @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", retryAnalyzer = RetryAnalyzer.class)
     public void loginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();
@@ -29,7 +29,7 @@ public class PublicLoginTests extends TestBase {
         assertEquals(app.getPublicLoginPage().getMyAccountTitle(), "My Account", "User isn't logged in!");
     }
 
-    @DataSource("src/test/resources/dataProviders/invalidLoginData.json")
+    @DataSource(value = "src/test/resources/dataProviders/invalidLoginData.json", format = DataSource.Format.JSON)
     @Test(priority = 2, groups = {"regression"}, dataProviderClass = AllDataProviders.class, dataProvider = "loginData", retryAnalyzer = RetryAnalyzer.class)
     public void invalidLoginTest(PublicLoginData loginData) {
         app.getPublicNaviPage().clickMyAccount();

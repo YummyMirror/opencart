@@ -20,7 +20,7 @@ public class AdminCategoriesTests extends TestBase {
         }
     }
 
-    @DataSource("src/test/resources/dataProviders/validCategoryData.json")
+    @DataSource(value = "src/test/resources/dataProviders/validCategoryData.json", format = DataSource.Format.JSON)
     @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "categoryData", retryAnalyzer = RetryAnalyzer.class)
     public void createMainCategories(AdminCategoryData categoryData) {
         int categoryAmountBefore = app.getAdminCategoryPage().getCategoryAmount();

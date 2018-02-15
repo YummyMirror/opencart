@@ -21,7 +21,7 @@ public class AdminReviewsTests extends TestBase {
         }
     }
 
-    @DataSource("src/test/resources/dataProviders/validReviewData.json")
+    @DataSource(value = "src/test/resources/dataProviders/validReviewData.json", format = DataSource.Format.JSON)
     @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "reviewData", retryAnalyzer = RetryAnalyzer.class)
     public void createReviewTest(AdminReviewData reviewData) {
         Set<AdminReviewData> reviewsBefore = app.getAdminReviewPage().getReviews();

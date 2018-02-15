@@ -10,7 +10,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "a1111111",
+    "seoKeywords": "a11111111",
     "designLayout": "Account"
   },
   {
@@ -24,49 +24,7 @@
     "columns": "1",
     "sortOrder": "1",
     "status": true,
-    "seoKeywords": "a2222222",
-    "designLayout": "Account"
-  },
-  {
-    "catName": "CatName333",
-    "catDesc": "CatDesc",
-    "metaTagTitle": "MetaTagTitle",
-    "metaTagDesc": "MetaTagDesc",
-    "metaTagKeywords": "MetaTagKeywords",
-    "parent": "",
-    "top": true,
-    "columns": "1",
-    "sortOrder": "1",
-    "status": true,
-    "seoKeywords": "a3333333",
-    "designLayout": "Account"
-  },
-  {
-    "catName": "CatName444",
-    "catDesc": "CatDesc",
-    "metaTagTitle": "MetaTagTitle",
-    "metaTagDesc": "MetaTagDesc",
-    "metaTagKeywords": "MetaTagKeywords",
-    "parent": "",
-    "top": true,
-    "columns": "1",
-    "sortOrder": "1",
-    "status": true,
-    "seoKeywords": "a4444444",
-    "designLayout": "Account"
-  },
-  {
-    "catName": "CatName555",
-    "catDesc": "CatDesc",
-    "metaTagTitle": "MetaTagTitle",
-    "metaTagDesc": "MetaTagDesc",
-    "metaTagKeywords": "MetaTagKeywords",
-    "parent": "",
-    "top": true,
-    "columns": "1",
-    "sortOrder": "1",
-    "status": true,
-    "seoKeywords": "a5555555",
+    "seoKeywords": "a22222222",
     "designLayout": "Account"
   }
 ]

@@ -19,7 +19,7 @@ public class PublicRegTests extends TestBase {
             app.getPublicNaviPage().clickLogout();
     }
 
-    @DataSource("src/test/resources/dataProviders/validRegData.json")
+    @DataSource(value = "src/test/resources/dataProviders/validRegData.json", format = DataSource.Format.JSON)
     @Test(priority = 1, groups = {"criticalPath"}, dataProviderClass = AllDataProviders.class, dataProvider = "registrationData", retryAnalyzer = RetryAnalyzer.class)
     public void registrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();
@@ -29,7 +29,7 @@ public class PublicRegTests extends TestBase {
         assertEquals(app.getPublicRegPage().getSuccessLinkTitle(), "Success", "User isn't registered!");
     }
 
-    @DataSource("src/test/resources/dataProviders/invalidRegData.json")
+    @DataSource(value = "src/test/resources/dataProviders/invalidRegData.json", format = DataSource.Format.JSON)
     @Test(priority = 2, groups = {"regression"}, dataProviderClass = AllDataProviders.class, dataProvider = "registrationData", retryAnalyzer = RetryAnalyzer.class)
     public void invalidRegistrationTest(PublicRegData regData) {
         app.getPublicNaviPage().clickMyAccount();

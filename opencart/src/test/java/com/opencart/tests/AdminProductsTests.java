@@ -22,7 +22,7 @@ public class AdminProductsTests extends TestBase{
         }
     }
 
-    @DataSource("src/test/resources/dataProviders/validProductData.json")
+    @DataSource(value = "src/test/resources/dataProviders/validProductData.json", format = DataSource.Format.JSON)
     @Test(priority = 0, groups = {"smoke"}, dataProviderClass = AllDataProviders.class, dataProvider = "productData", retryAnalyzer = RetryAnalyzer.class)
     public void createProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
@@ -55,7 +55,7 @@ public class AdminProductsTests extends TestBase{
         assertEquals(productsAfter, productsBefore, "Collections aren't equal!");
     }
 
-    @DataSource("src/test/resources/dataProviders/validProductDataEdit.json")
+    @DataSource(value = "src/test/resources/dataProviders/validProductDataEdit.json", format = DataSource.Format.JSON)
     @Test(priority = 2, groups = {"regression"}, dataProviderClass = AllDataProviders.class, dataProvider = "productData", retryAnalyzer = RetryAnalyzer.class)
     public void editProductTest(AdminProductData productData) {
         Set<AdminProductData> productsBefore = app.getAdminProductPage().getProducts();
